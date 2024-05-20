@@ -1,0 +1,93 @@
+{
+  "id":"com.aembootcamp:aem-bootcamp.all:slingosgifeature:user-aggregated-publish:1.0.0-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"com.aembootcamp:aem-bootcamp.core:1.0.0-SNAPSHOT",
+      "feature-origins":"com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT",
+      "Bundle-SymbolicName":"aem-bootcamp.core",
+      "Bundle-Version":"1.0.0.SNAPSHOT",
+      "start-order":"20",
+      "content-package-origins":"com.aembootcamp:aem-bootcamp.all:1.0.0-SNAPSHOT"
+    }
+  ],
+  "configurations":  {
+    "com.adobe.cq.wcm.core.components.internal.servlets.TableOfContentsFilter~aem-bootcamp":    {
+      ":configurator:content-package-origins":"com.aembootcamp:aem-bootcamp.all:1.0.0-SNAPSHOT|com.aembootcamp:aem-bootcamp.ui.config:1.0.0-SNAPSHOT",
+      "enabled":"true",
+      ":configurator:feature-origins-enabled":[
+        "com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins":[
+        "com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ]
+    },
+    "org.apache.sling.commons.log.LogManager.factory.config~aem-bootcamp":    {
+      ":configurator:content-package-origins":"com.aembootcamp:aem-bootcamp.all:1.0.0-SNAPSHOT|com.aembootcamp:aem-bootcamp.ui.config:1.0.0-SNAPSHOT",
+      "org.apache.sling.commons.log.names":[
+        "com.aembootcamp"
+      ],
+      "org.apache.sling.commons.log.level":"INFO",
+      "org.apache.sling.commons.log.file":"logs/error.log",
+      "org.apache.sling.commons.log.additiv":"false",
+      ":configurator:feature-origins-org.apache.sling.commons.log.names":[
+        "com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.file":[
+        "com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.level":[
+        "com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins-org.apache.sling.commons.log.additiv":[
+        "com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ],
+      ":configurator:feature-origins":[
+        "com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ]
+    }
+  },
+  "assembled-features:ARTIFACTS|TRANSIENT":[
+    "com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+  ],
+  "repoinit:TEXT|true":[
+    "# origin=com.aembootcamp:aem-bootcamp.all:1.0.0-SNAPSHOT|com.aembootcamp:aem-bootcamp.ui.config:1.0.0-SNAPSHOT source=org.apache.sling.jcr.repoinit.RepositoryInitializer~aem-bootcamp",
+    "create path (sling:OrderedFolder) /content/dam/aem-bootcamp",
+    "create path (nt:unstructured) /content/dam/aem-bootcamp/jcr:content",
+    "set properties on /content/dam/aem-bootcamp/jcr:content",
+    "  set cq:conf{String} to /conf/aem-bootcamp",
+    "  set jcr:title{String} to \"AEM Bootcamp Site\"",
+    "end"
+  ],
+  "content-packages:ARTIFACTS|true":[
+    {
+      "id":"com.aembootcamp:aem-bootcamp.ui.config:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+      "feature-origins":"com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+    },
+    {
+      "id":"com.aembootcamp:aem-bootcamp.ui.apps:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+      "feature-origins":"com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+    },
+    {
+      "id":"com.aembootcamp:aem-bootcamp.all:zip:cp2fm-converted:1.0.0-SNAPSHOT",
+      "feature-origins":"com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+    }
+  ],
+  "api-regions:JSON|false":[
+    {
+      "name":"global",
+      "exports":[
+        "com.aembootcamp.core.filters",
+        "com.aembootcamp.core.listeners",
+        "com.aembootcamp.core.models",
+        "com.aembootcamp.core.schedulers",
+        "com.aembootcamp.core.servlets"
+      ],
+      "feature-origins":[
+        "com.aembootcamp:aem-bootcamp.all:slingosgifeature:1.0.0-SNAPSHOT"
+      ]
+    }
+  ],
+  "artifact-rules:JSON|false":{
+
+  }
+}
