@@ -2,7 +2,7 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2024-05-23T11:22:26.428-05:00"
+        cq:lastModified="{Date}2024-05-23T13:21:37.892-05:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aem-bootcamp/settings/wcm/templates/landing-page"
         jcr:primaryType="cq:PageContent"
@@ -29,22 +29,7 @@
                 jcr:lastModified="{Date}2024-05-23T11:23:07.550-05:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aem-bootcamp/components/container">
-                <carousel
-                    jcr:created="{Date}2024-05-23T11:22:19.987-05:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2024-05-23T11:22:19.987-05:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-bootcamp/components/carousel"/>
-                <teaser
-                    jcr:created="{Date}2024-05-23T11:22:26.423-05:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2024-05-23T11:22:26.423-05:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-bootcamp/components/teaser"/>
-            </container>
+                sling:resourceType="aem-bootcamp/components/container"/>
             <container_1729542432
                 jcr:created="{Date}2024-05-22T14:06:14.104-05:00"
                 jcr:createdBy="admin"
