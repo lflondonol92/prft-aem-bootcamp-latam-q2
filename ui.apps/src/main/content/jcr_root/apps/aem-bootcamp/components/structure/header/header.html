@@ -6,7 +6,7 @@
   data-sly-call="${template.placeholder @ isEmpty=empty}"
 />
 <sly data-sly-test="${!empty}">
-  <div class="container responsivegrid" data-cmp-is="helloworld">
+  <div class="container responsivegrid">
     <div class="container responsivegrid cmp-layoutcontainer--header">
       <div class="cmp-container">
         <div class="aem-Grid cmp-container--layout">
@@ -14,7 +14,7 @@
             class="image cmp-image--logo aem-GridColumn"
             style="display: inline-block"
           >
-            <div class="cmp-image" href="#">
+            <div class="cmp-image">
               <a
                 class="cmp-image__link"
                 href="${navHeader.logoLink @extension='html'}"
