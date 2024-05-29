@@ -1,33 +1,39 @@
-<!-- Header Component Start -->
-<sly data-sly-use.navHeader="com.aembootcamp.core.models.HeaderModel"
-    data-sly-test.empty="${!navHeader.fileReference}"
-    data-sly-use.template="core/wcm/components/commons/v1/templates.html"
-    data-sly-call="${template.placeholder @ isEmpty=empty}" />
-    <sly data-sly-test="${!empty}">
-        <div class="container responsivegrid">
-            <div  class="container responsivegrid cmp-layoutcontainer--header">
-               <div class="cmp-container">
-                  <div class="aem-Grid cmp-container--layout">
-                     <div  class="image cmp-image--logo aem-GridColumn" style="display: inline-block;">
-                        <div  class="cmp-image" href="${navHeader.logoLink}">
-                           <img src="${navHeader.fileReference}"  loading="lazy"  class="cmp-image__image"  itemprop="contentUrl"  alt="${navHeader.altTxt}"> </a>
-                        </div>
-                     </div>
-                     <div class="navigation cmp-navigation--header" style="display: inline;">
-                        <nav class="cmp-navigation" >
-                           <ul data-sly-repeat="${navHeader.headerNavigationItemsList}" class="cmp-navigation__group">
-                              <li class="cmp-navigation__item cmp-navigation__item--active">
-                                <a  href="${item.path @extension='html'}" data-cmp-clickable="" class="cmp-navigation__item-link">${item.title}</a>
-                             </li>
-                           </ul>
-                        </nav>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-    </sly>
- 
-<!-- Header Component End -->
-<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
-<sly data-sly-call="${clientlib.css @ categories='cq.authoring.editor.hook'}" />
+<sly
+  data-sly-use.header="com.aembootcamp.core.models.HeaderModel"
+  data-sly-test.empty="${!header.fileReference}"
+  data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+  data-sly-call="${template.placeholder @ isEmpty=empty}"
+/>
+<sly data-sly-test="${!empty}">
+  <header class="cmp-layoutcontainer--header">
+    <div class="image cmp-image--logo">
+      <div class="cmp-image">
+        <a href="${header.logoLink @extension='html'}">
+          <img
+            src="${header.fileReference}"
+            loading="lazy"
+            class="cmp-image__image"
+            alt="${header.altText @ context='text'}"
+          />
+        </a>
+      </div>
+    </div>
+    <div class="navigation cmp-navigation--header">
+      <nav class="cmp-navigation">
+        <ul class="cmp-navigation__group">
+          <li
+            data-sly-repeat.navItems="${header.headerNavigationItemsList}"
+            class="cmp-navigation__item cmp-navigation__item--level-0 ${navItems.path == currentPage.path ? 'cmp-navigation__item--active' : ''}"
+          >
+            <a
+              href="${navItems.path @extension='html'}"
+              data-cmp-clickable=""
+              class="cmp-navigation__item-link"
+              >${navItems.title}</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</sly>

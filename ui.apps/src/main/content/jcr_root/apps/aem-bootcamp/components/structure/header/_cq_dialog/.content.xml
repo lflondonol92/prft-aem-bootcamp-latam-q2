@@ -40,7 +40,7 @@
                                         text="Upload file"
                                         uploadUrl="/content/dam"
                                         required="{Boolean}true"
-                                        fileNameParameter="./fileReference"
+                                        fileNameParameter="./file"
                                         uploadUrlBuilder=""/>
                                     <alt
                                         jcr:primaryType="nt:unstructured"

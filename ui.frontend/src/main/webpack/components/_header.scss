@@ -1,62 +1,52 @@
 .cmp-layoutcontainer--header {
-  .cmp-container {
-    height: 60px;
-    background-color: white;
-    .cmp-container--layout {
-      box-sizing: border-box;
-      padding: 0 20px;
-      height: inherit;
+  display: flex;
+  background-color: $color-white;
+
+  .cmp-image--logo {
+    flex: 1;
+    margin: auto;
+    padding-left: 20px;
+
+    .cmp-image {
+      width: 100px;
+    }
+  }
+
+  .cmp-navigation--header {
+    flex: 1;
+
+    .cmp-navigation__group {
       display: flex;
-      justify-content: space-between;
+      padding: 0;
+      list-style: none;
+      column-gap: 5px;
+    }
+
+    .cmp-navigation__item {
+      display: flex;
+      justify-content: center;
       align-items: center;
-      .cmp-image--logo {
-        height: inherit;
-        .cmp-image {
-          height: inherit;
-          display: flex;
-          align-items: center;
-          overflow: hidden;
-          img {
-            height: 90px;
-            width: auto;
-          }
-        }
+      min-width: 100px;
+      height: 40px;
+      color: $color-foreground;
+      text-transform: uppercase;
+      padding: 0 5px;
+    }
+
+    .cmp-navigation__item-link {
+      text-decoration: none;
+    }
+
+    .cmp-navigation__item--active {
+      background-color: $color-primary;
+
+      .cmp-navigation__item-link {
+        color: $color-white;
       }
-      .cmp-navigation--header {
-        .cmp-navigation {
-          display: flex;
-          .cmp-navigation__group {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            .cmp-navigation__item {
-              height: 60px;
-              box-sizing: border-box;
-              padding: 19px 20px;
-              list-style: none;
-              line-height: 1.7;
-              background-color: transparent;
-              .cmp-navigation__item-link {
-                font-family: system-ui, -apple-system, BlinkMacSystemFont,
-                  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-                  "Helvetica Neue", sans-serif;
-                text-transform: uppercase;
-                height: 100%;
-                width: 100%;
-                margin: auto;
-                color: black;
-                text-decoration: none;
-              }
-              &--active {
-                background-color: red;
-                .cmp-navigation__item-link {
-                  color: white;
-                }
-              }
-            }
-          }
-        }
-      }
+    }
+
+    .cmp-navigation__item:hover .cmp-navigation__item-link {
+      border-bottom: $color-primary 2px solid;
     }
   }
 }
