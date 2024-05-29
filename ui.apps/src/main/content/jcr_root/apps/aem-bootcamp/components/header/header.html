@@ -8,8 +8,19 @@
                <div class="cmp-container">
                   <div class="aem-Grid cmp-container--layout">
                      <div  class="image cmp-image--logo aem-GridColumn" style="display: inline-block;">
-                        <div  class="cmp-image">
-                           <img src="${navHeader.fileReference}"  loading="lazy"  class="cmp-image__image"  itemprop="contentUrl"  alt="${navHeader.altTxt}"> </a>
+                        <div  class="cmp-image" >
+                           <a
+                           class="cmp-image__link"
+                           href="${navHeader.logoLink @extension='html'}"
+                         >
+                           <img
+                             src="${navHeader.fileReference}"
+                             loading="lazy"
+                             class="cmp-image__image"
+                             itemprop="contentUrl"
+                             alt="${navHeader.altText}"
+                           />
+                         </a>
                         </div>
                      </div>
                      <div class="navigation cmp-navigation--header" style="display: inline;">
