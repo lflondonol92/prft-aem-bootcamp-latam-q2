@@ -33,15 +33,15 @@
                                         autoStart="{Boolean}true"
                                         cq-msm-lockable="/file"
                                         fieldLabel="Upload files"
+                                        fileNameParameter="./file"
                                         mimeTypes="[image/*]"
                                         multiple="{Boolean}false"
                                         name="./file"
+                                        required="{Boolean}true"
                                         sizeLimit="100000000"
                                         text="Upload file"
                                         uploadUrl="/content/dam"
-                                        required="{Boolean}true"
-                                        fileNameParameter="./file"
-                                        uploadUrlBuilder=""/>
+                                        uploadUrlBuilder="\0"/>
                                     <alt
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
