@@ -144,6 +144,8 @@ Import-Package: javax.annotation;version=0.0.0,*
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
+      <version>1.18.32</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>
