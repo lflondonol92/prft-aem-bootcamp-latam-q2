@@ -34,13 +34,11 @@
             style="display: inline"
           >
             <nav class="cmp-navigation">
-              <ul
-                data-sly-repeat="${navHeader.headerNavigationItemsList}"
-                class="cmp-navigation__group"
-              >
+              <ul class="cmp-navigation__group">
                 <li
                   class="cmp-navigation__item"
                   active="${item.path == currentPage.path}"
+                  data-sly-repeat="${navHeader.headerNavigationItemsList}"
                 >
                   <a
                     href="${item.path @extension='html'}"
