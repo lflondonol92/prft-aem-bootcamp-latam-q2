@@ -6,15 +6,15 @@
 
 .cmp-breadcrumb__item {
     text-transform: uppercase;
-    font-weight: $font-semibold;
 }
 
 .cmp-breadcrumb__item-link {
     text-decoration: none;
+    font-weight: $font-semibold;
 }
 
 .cmp-breadcrumb__item-link::after {
     content: "▶";
-    color: red;
+    color: $color-primary;
     margin-left: 5px;
 }
