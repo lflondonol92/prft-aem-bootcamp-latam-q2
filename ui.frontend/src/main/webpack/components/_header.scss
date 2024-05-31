@@ -1,0 +1,65 @@
+.cmp-layoutcontainer--header {
+  display: flex;
+  background-color: $color-white;
+  height: 70px;
+  padding: 0 20px;
+
+  .cmp-image--logo {
+    flex: 1;
+    height: inherit;
+
+    .cmp-image {
+      width: 100px;
+      height: inherit;
+
+      &__link {
+        height: inherit;
+
+        img {
+          height: inherit;
+        }
+      }
+    }
+  }
+
+  .cmp-navigation--header {
+    display: flex;
+    align-items: center;
+
+    .cmp-navigation__group {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      column-gap: 5px;
+    }
+
+    .cmp-navigation__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 100px;
+      height: 40px;
+      color: $color-foreground;
+      text-transform: uppercase;
+      padding: 0 5px;
+    }
+
+    .cmp-navigation__item-link {
+      text-decoration: none;
+    }
+
+    .cmp-navigation__item--active {
+      background-color: $color-primary;
+
+      .cmp-navigation__item-link {
+        color: $color-white;
+      }
+    }
+
+    .cmp-navigation__item:hover:not(.cmp-navigation__item--active)
+      .cmp-navigation__item-link {
+      border-bottom: $color-primary 4px solid;
+    }
+  }
+}
