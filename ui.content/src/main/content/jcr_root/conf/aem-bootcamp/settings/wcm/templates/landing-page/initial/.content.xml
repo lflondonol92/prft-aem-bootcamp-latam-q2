@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/aem-bootcamp/settings/wcm/templates/landing-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="aem-bootcamp/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aem-bootcamp/components/container"
+            layout="responsiveGrid">
+            <container_1593565191
+                jcr:created="{Date}2024-05-22T16:42:11.004-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-05-22T17:05:16.103-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-bootcamp/components/container"
+                layout="responsiveGrid"/>
+            <container
+                jcr:created="{Date}2024-05-22T16:42:06.671-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-05-22T17:05:18.074-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-bootcamp/components/container"
+                layout="responsiveGrid"/>
+        </root>
+    </jcr:content>
+</jcr:root>
