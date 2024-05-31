@@ -1,5 +1,21 @@
-.cmp-breadcrumb {}
-.cmp-breadcrumb__list {}
-.cmp-breadcrumb__item {}
-.cmp-breadcrumb__item--active {}
-.cmp-breadcrumb__item-link {}
+.cmp-breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+
+  &__item {
+    display: inline;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  &__item + &__item::before {
+    margin-left: 5px;
+    color: $color-primary;
+    content: "▶";
+  }
+  &__item &__link {
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
