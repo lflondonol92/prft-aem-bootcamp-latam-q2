@@ -1,0 +1,3 @@
+form.cq-dialog coral-tabview > coral-tablist[hidden]{
+    display:flex !important;
+}
