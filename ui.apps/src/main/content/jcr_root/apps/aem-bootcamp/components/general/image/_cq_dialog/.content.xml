@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Image"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.image.v2.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_image_v2"
+    trackingFeature="core-components:image:v2">
+    <content
+        jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured">
+                <items jcr:primaryType="nt:unstructured">
+                    <asset
+                        jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <file
+                                                jcr:primaryType="nt:unstructured" />
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </asset>
+                    <metadata
+                        jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <dynamicmediaGroup
+                                                jcr:primaryType="nt:unstructured">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <dmpresettypecontainer
+                                                        jcr:primaryType="nt:unstructured">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <presettype
+                                                                jcr:primaryType="nt:unstructured">
+                                                                <items
+                                                                    jcr:primaryType="nt:unstructured">
+                                                                    <option1
+                                                                        jcr:primaryType="nt:unstructured" />
+                                                                    <option2
+                                                                        jcr:primaryType="nt:unstructured" />
+                                                                </items>
+                                                            </presettype>
+                                                        </items>
+                                                    </dmpresettypecontainer>
+                                                    <imagepreset
+                                                        jcr:primaryType="nt:unstructured">
+                                                        <datasource
+                                                            jcr:primaryType="nt:unstructured" />
+                                                    </imagepreset>
+                                                    <smartcroprenditions
+                                                        jcr:primaryType="nt:unstructured">
+                                                    </smartcroprenditions>
+                                                    <imageModifiers
+                                                        jcr:primaryType="nt:unstructured" />
+                                                </items>
+                                            </dynamicmediaGroup>
+                                            <decorative
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:hideResource="true" />
+                                            <alternativeGroup
+                                                jcr:primaryType="nt:unstructured">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <alt
+                                                        jcr:primaryType="nt:unstructured" />
+                                                    <altValueFromDAM
+                                                        jcr:primaryType="nt:unstructured" 
+                                                        sling:hideResource="true"/>
+                                                </items>
+                                            </alternativeGroup>
+                                            <captionGroup
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:hideResource="true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <caption
+                                                        jcr:primaryType="nt:unstructured" />
+                                                    <titleValueFromDAM
+                                                        jcr:primaryType="nt:unstructured" />
+                                                    <displayPopupTitle
+                                                        jcr:primaryType="nt:unstructured" />
+                                                </items>
+                                            </captionGroup>
+                                            <linkURL
+                                                jcr:primaryType="nt:unstructured" />
+                                            <id
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:hideResource="true" />
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </metadata>
+                    <cq:styles
+                        jcr:primaryType="nt:unstructured" />
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
