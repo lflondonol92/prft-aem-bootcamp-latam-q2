@@ -1,2 +1,66 @@
-.cmp-separator {}
-.cmp-separator__horizontal-rule {}
+.cmp-separator {
+}
+.cmp-separator__horizontal-rule {
+    border-style: solid;
+}
+
+//Footer variations
+.cmp-separator__grey {
+    .cmp-separator__horizontal-rule {
+        color: $color-grey;
+    }
+}
+
+.cmp-separator__black {
+    .cmp-separator__horizontal-rule {
+        color: $color-black;
+    }
+}
+
+.cmp-separator__white {
+    .cmp-separator__horizontal-rule {
+        color: $color-white;
+    }
+}
+
+.cmp-separator__yellow {
+    .cmp-separator__horizontal-rule {
+        color: $color-yellow;
+    }
+}
+
+.cmp-separator__red {
+    .cmp-separator__horizontal-rule {
+        color: $color-red;
+    }
+}
+
+.cmp-separator__blue {
+    .cmp-separator__horizontal-rule {
+        color: $color-blue;
+    }
+}
+
+.cmp-separator__thin {
+    .cmp-separator__horizontal-rule {
+        border-width: 0.1px;
+    }
+}
+
+.cmp-separator__thick {
+    .cmp-separator__horizontal-rule {
+        border-width: 2px;
+    }
+}
+
+.cmp-separator__dashed {
+    .cmp-separator__horizontal-rule {
+        border-style: dashed;
+    }
+}
+
+.cmp-separator__dotted {
+    .cmp-separator__horizontal-rule {
+        border-style: dotted;
+    }
+}
