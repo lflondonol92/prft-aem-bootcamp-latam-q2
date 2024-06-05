@@ -22,10 +22,10 @@ public class BreadcrumbModel implements Breadcrumb {
   @Delegate @Self @Via(type = ResourceSuperType.class)
   private Breadcrumb breadcrumb;
 
-  public Boolean getIsHome() {
+  public Boolean isHomePage() {
     if(currentPage != null) {
-      String pagePath = currentPage.getPath();
-      return pagePath != null && pagePath.endsWith("/home");
+      String templateName = currentPage.getTemplate().getName();
+      return templateName.equals("home-page");
     }
     return false;
   }

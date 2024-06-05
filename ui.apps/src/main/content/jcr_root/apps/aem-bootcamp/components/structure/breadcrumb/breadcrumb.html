@@ -1,5 +1,5 @@
 <sly data-sly-use.breadcrumb="com.aembootcamp.core.models.BreadcrumbModel" />
-<sly data-sly-test="${!breadcrumb.isHome}" data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+<sly data-sly-test="${!breadcrumb.homePage}" data-sly-use.template="core/wcm/components/commons/v1/templates.html">
     <ol class="breadcrumb"
         data-sly-list.navItem="${breadcrumb.items}"
         class="cmp-breadcrumb">
