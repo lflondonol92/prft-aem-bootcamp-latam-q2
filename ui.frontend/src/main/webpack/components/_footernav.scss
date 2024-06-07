@@ -2,14 +2,12 @@
   .cmp-navigation {
     &__group {
       display: flex;
-      gap: 6px;
+      gap: 24px;
       list-style-type: none;
     }
-
     &__item-link {
       text-decoration: none;
     }
-
     &__item:hover {
       border-bottom: $color-foreground 2px solid;
     }
