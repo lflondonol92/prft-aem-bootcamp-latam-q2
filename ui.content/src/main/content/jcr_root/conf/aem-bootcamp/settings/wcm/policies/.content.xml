@@ -205,112 +205,6 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_footer>
             </experiencefragment>
-            <container jcr:primaryType="nt:unstructured">
-                <policy_1574694950110
-                    jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Page Root"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Bootcamp Site - Content,/apps/aem-bootcamp/components/form/container,group:AEM Bootcamp Site - Structure]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                    <cq:authoring jcr:primaryType="nt:unstructured">
-                        <assetToComponentMapping jcr:primaryType="nt:unstructured">
-                            <mapping_1575024218483
-                                jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="image/*"
-                                droptarget="image"
-                                resourceType="aem-bootcamp/components/image"/>
-                            <mapping_1575030843388
-                                jcr:primaryType="nt:unstructured"
-                                assetGroup="content"
-                                assetMimetype="text/html"
-                                droptarget="experiencefragment"
-                                resourceType="aem-bootcamp/components/experiencefragment"/>
-                            <mapping_1575030853128
-                                jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
-                                droptarget="contentfragment"
-                                resourceType="aem-bootcamp/components/contentfragment"/>
-                        </assetToComponentMapping>
-                    </cq:authoring>
-                </policy_1574694950110>
-                <policy_1574695586800
-                    jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2024-05-23T15:16:56.247-05:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Page Content"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Bootcamp Site - Content,/apps/aem-bootcamp/components/form/container,group:AEM Bootcamp Site - Structure]"
-                    layoutDisabled="false">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                    <cq:authoring jcr:primaryType="nt:unstructured">
-                        <assetToComponentMapping jcr:primaryType="nt:unstructured">
-                            <mapping_1575030255082
-                                jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="image/*"
-                                droptarget="image"
-                                resourceType="aem-bootcamp/components/image"/>
-                            <mapping_1575030260142
-                                jcr:primaryType="nt:unstructured"
-                                assetGroup="content"
-                                assetMimetype="text/html"
-                                droptarget="experiencefragment"
-                                resourceType="aem-bootcamp/components/experiencefragment"/>
-                            <mapping_1575030269139
-                                jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
-                                droptarget="contentfragment"
-                                resourceType="aem-bootcamp/components/contentfragment"/>
-                        </assetToComponentMapping>
-                    </cq:authoring>
-                </policy_1574695586800>
-                <policy_649128221558427
-                    cq:styleDefaultElement="main"
-                    jcr:description="Sets a &lt;main> element on the page content area."
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Page Main"
-                    sling:resourceType="wcm/core/components/policy/policy">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy_649128221558427>
-                <policy_1575040440977
-                    jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
-                    jcr:lastModified="{Date}2024-06-04T17:45:05.437-05:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="XF Root"
-                    sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Bootcamp Site - Content,/apps/aem-bootcamp/components/form/container,/apps/aem-bootcamp/components/general/separator,/apps/aem-bootcamp/components/structure/header,/apps/aem-bootcamp/components/navigation]"
-                    layoutDisabled="false">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
-                    <cq:authoring jcr:primaryType="nt:unstructured">
-                        <assetToComponentMapping jcr:primaryType="nt:unstructured">
-                            <mapping_1575024218483
-                                jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="image/*"
-                                droptarget="image"
-                                resourceType="aem-bootcamp/components/image"/>
-                            <mapping_1575030843388
-                                jcr:primaryType="nt:unstructured"
-                                assetGroup="content"
-                                assetMimetype="text/html"
-                                droptarget="experiencefragment"
-                                resourceType="aem-bootcamp/components/experiencefragment"/>
-                            <mapping_1575030853128
-                                jcr:primaryType="nt:unstructured"
-                                assetGroup="media"
-                                assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
-                                droptarget="contentfragment"
-                                resourceType="aem-bootcamp/components/contentfragment"/>
-                        </assetToComponentMapping>
-                    </cq:authoring>
-                </policy_1575040440977>
-            </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
                     jcr:description="Sets the title size to H3."
@@ -349,7 +243,7 @@
             <general jcr:primaryType="nt:unstructured">
                 <separator jcr:primaryType="nt:unstructured">
                     <policy_1717593874725
-                        jcr:lastModified="{Date}2024-06-05T09:29:14.798-05:00"
+                        jcr:lastModified="{Date}2024-06-07T15:49:39.872-05:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Footer Separator"
@@ -358,6 +252,17 @@
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                         <cq:styleGroups jcr:primaryType="nt:unstructured">
                             <item0
+                                cq:styleGroupLabel="Visibility"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-separator__hide"
+                                        cq:styleId="1717793350818"
+                                        cq:styleLabel="Hide"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                            <item1
                                 cq:styleGroupLabel="Color"
                                 jcr:primaryType="nt:unstructured">
                                 <cq:styles jcr:primaryType="nt:unstructured">
@@ -392,8 +297,8 @@
                                         cq:styleLabel="Blue"
                                         jcr:primaryType="nt:unstructured"/>
                                 </cq:styles>
-                            </item0>
-                            <item1
+                            </item1>
+                            <item2
                                 cq:styleGroupLabel="Thickness"
                                 jcr:primaryType="nt:unstructured">
                                 <cq:styles jcr:primaryType="nt:unstructured">
@@ -408,8 +313,8 @@
                                         cq:styleLabel="Thick"
                                         jcr:primaryType="nt:unstructured"/>
                                 </cq:styles>
-                            </item1>
-                            <item2
+                            </item2>
+                            <item3
                                 cq:styleGroupLabel="Style"
                                 jcr:primaryType="nt:unstructured">
                                 <cq:styles jcr:primaryType="nt:unstructured">
@@ -424,7 +329,7 @@
                                         cq:styleLabel="Dotted"
                                         jcr:primaryType="nt:unstructured"/>
                                 </cq:styles>
-                            </item2>
+                            </item3>
                         </cq:styleGroups>
                     </policy_1717593874725>
                 </separator>

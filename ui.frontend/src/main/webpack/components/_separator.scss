@@ -5,6 +5,10 @@
 }
 
 //Footer variations
+.cmp-separator__hide {
+    display: none;
+}
+
 .cmp-separator__grey {
     .cmp-separator__horizontal-rule {
         color: $color-grey;
