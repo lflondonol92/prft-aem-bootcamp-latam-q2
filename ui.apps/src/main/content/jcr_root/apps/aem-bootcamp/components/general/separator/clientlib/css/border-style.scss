@@ -1,0 +1,21 @@
+.cmp-separator__horizontal-rule {
+    border-style:solid;
+}
+
+.cmp-separator__dotted {
+    .cmp-separator__horizontal-rule {
+        border-style: dotted;
+    }
+}
+
+.cmp-separator__dashed {
+    .cmp-separator__horizontal-rule {
+        border-style: dashed;
+    }
+}
+
+.cmp-separator__solid {
+    .cmp-separator__horizontal-rule {
+        border-style: solid;
+    }
+}

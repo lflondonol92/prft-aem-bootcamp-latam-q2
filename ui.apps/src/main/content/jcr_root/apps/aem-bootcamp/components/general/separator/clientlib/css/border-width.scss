@@ -1,0 +1,23 @@
+.cmp-separator__1 {
+  .cmp-separator__horizontal-rule {
+      border-width: 1px ;
+  }
+}
+
+.cmp-separator__2 {
+  .cmp-separator__horizontal-rule {
+      border-width: 2px;
+  }
+}
+
+.cmp-separator__4 {
+  .cmp-separator__horizontal-rule {
+      border-width: 4px;
+  }
+}
+
+.cmp-separator__hidden {
+  .cmp-separator__horizontal-rule {
+      display: none;
+  }
+}
