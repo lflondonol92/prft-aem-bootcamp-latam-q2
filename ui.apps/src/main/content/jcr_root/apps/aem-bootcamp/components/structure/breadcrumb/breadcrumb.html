@@ -1,4 +1,6 @@
 <sly data-sly-use.breadcrumb="com.aembootcamp.core.models.BreadcrumbModel" />
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"/>
+
 <sly data-sly-test="${!breadcrumb.homePage}">
   <ol
     class="cmp-breadcrumb__list"
@@ -16,5 +18,5 @@
   </ol>
 </sly>
 <sly
-  data-sly-call="${template.placeholder @ isEmpty=breadcrumb.items.size == 0}"
+  data-sly-call="${templates.placeholder @ isEmpty=breadcrumb.items.size == 0}"
 ></sly>
