@@ -1,17 +1,17 @@
-.cmp-layoutcontainer--footer {
+.cmp-footer {
   display: flex;
   justify-content: center;
   background-color: $color-white;
 
-  .cmp-layoutcontainer--footer__wrapper {
+  &__wrapper {
     width: 1024px;
   }
 
-  .cmp-layoutcontainer--footer__links {
+  &__links {
     display: flex;
   }
 
-  .cmp-image--logo {
+  &__logo {
     margin: auto 100px auto 0;
 
     .cmp-image {

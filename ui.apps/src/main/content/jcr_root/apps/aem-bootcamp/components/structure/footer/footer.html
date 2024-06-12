@@ -1,13 +1,22 @@
-<footer class="cmp-layoutcontainer--footer">
-   <div class="cmp-layoutcontianer--footer__links">
-      <div class="cmp-image--logo"
-         data-sly-resource="${'image' @ resourceType='/apps/aem-bootcamp/components/general/image'}"
+<footer class="cmp-footer">
+   <div class="cmp-footer__wrapper">
+      <div class="cmp-footer__links">
+         <div
+            class="cmp-footer__logo"
+            data-sly-resource="${'image' @ resourceType='/apps/aem-bootcamp/components/general/image'}"
+            ></div>
+         <div
+            class="cmp-footer__nav"
+            data-sly-resource="${'footernav' @ resourceType='/apps/aem-bootcamp/components/structure/footernav'}"
+            ></div>
+      </div>
+      <div
+         class="cmp-footer__separator"
+         data-sly-resource="${'separator' @ resourceType='/apps/aem-bootcamp/components/general/separator'}"
          ></div>
       <div
-         data-sly-resource="${'footernav' @ resourceType='/apps/aem-bootcamp/components/structure/footernav'}"
+         class="cmp-footer__text"
+         data-sly-resource="${'text' @ resourceType='/apps/aem-bootcamp/components/general/text'}"
          ></div>
    </div>
-   <div
-         data-sly-resource="${'footernavs' @ resourceType='/apps/aem-bootcamp/components/general/separator'}"
-         ></div>
 </footer>
