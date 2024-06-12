@@ -1,2 +1,70 @@
-.cmp-separator {}
-.cmp-separator__horizontal-rule {}
+.cmp-separator {
+}
+.cmp-separator__horizontal-rule {
+  border-style: solid;
+}
+
+//Footer variations
+.cmp-separator--hide {
+  display: none;
+}
+
+.cmp-separator--grey {
+  .cmp-separator__horizontal-rule {
+    color: grey;
+  }
+}
+
+.cmp-separator--black {
+  .cmp-separator__horizontal-rule {
+    color: black;
+  }
+}
+
+.cmp-separator--white {
+  .cmp-separator__horizontal-rule {
+    color: white;
+  }
+}
+
+.cmp-separator--yellow {
+  .cmp-separator__horizontal-rule {
+    color: yellow;
+  }
+}
+
+.cmp-separator--red {
+  .cmp-separator__horizontal-rule {
+    color: red;
+  }
+}
+
+.cmp-separator--blue {
+  .cmp-separator__horizontal-rule {
+    color: blue;
+  }
+}
+
+.cmp-separator--dashed {
+  .cmp-separator__horizontal-rule {
+    border-style: dashed;
+  }
+}
+
+.cmp-separator--dotted {
+  .cmp-separator__horizontal-rule {
+    border-style: dotted;
+  }
+}
+
+.cmp-separator--thin {
+  .cmp-separator__horizontal-rule {
+    border-width: 0.1px;
+  }
+}
+
+.cmp-separator--thick {
+  .cmp-separator__horizontal-rule {
+    border-width: 2px;
+  }
+}
