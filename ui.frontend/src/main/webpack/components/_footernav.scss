@@ -1,0 +1,24 @@
+.footernav {
+  .cmp-navigation__group {
+    display: flex;
+    column-gap: 5px;
+  }
+
+  .cmp-navigation__item {
+    text-align: center;
+    min-width: 100px;
+    list-style-type: none;
+  }
+
+  .cmp-navigation__item-link {
+    text-decoration: none;
+  }
+
+  .cmp-navigation__item-link {
+    text-decoration: none;
+  }
+
+  .cmp-navigation__item:hover .cmp-navigation__item-link {
+    border-bottom: $color-foreground 2px solid;
+  }
+}
