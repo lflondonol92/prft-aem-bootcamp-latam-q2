@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Image"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.image.v2.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_image_v2"
+    trackingFeature="core-components:image:v2">
+    <content jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured">
+                <items jcr:primaryType="nt:unstructured">
+                    <metadata
+                        jcr:primaryType="nt:unstructured">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <decorative
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:hideResource="true"/>
+                                            <alternativeGroup jcr:primaryType="nt:unstructured">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <altValueFromDAM
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:hideResource="true"/>
+                                                </items>
+                                            </alternativeGroup>
+                                            <captionGroup
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:hideResource="true"/>
+                                            <linkURL jcr:primaryType="nt:unstructured"/>
+                                            <id
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:hideResource="true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </metadata>
+                    <cq:styles jcr:primaryType="nt:unstructured"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
