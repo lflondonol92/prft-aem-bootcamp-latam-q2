@@ -1,0 +1,12 @@
+<sly data-sly-use.breadcrumb="com.aembootcamp.core.models.BreadcrumbModel" />
+<sly data-sly-test="${!breadcrumb.homePage}" data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+    <ol class="breadcrumb"
+        data-sly-list.navItem="${breadcrumb.items}"
+        class="cmp-breadcrumb">
+        <li class="cmp-breadcrumb__item ${navItem.active ? 'active' : ''}">
+            <a href="${navItem.URL}" data-sly-unwrap="${navItem.active}" class="cmp-breadcrumb__link">${navItem.title}</a>
+        </li>
+    </ol>
+    <sly data-sly-call="${template.placeholder @ isEmpty=breadcrumb.items.size == 0}"></sly>
+</sly>
+
