@@ -38,7 +38,8 @@
                                                 fileNameParameter="./fileName"
                                                 fileReferenceParameter="./fileReference"
                                                 mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
-                                                name="./file"/>
+                                                name="./file"
+                                                allowUpload="{Boolean}false"/>
                                         </items>
                                     </column>
                                 </items>
