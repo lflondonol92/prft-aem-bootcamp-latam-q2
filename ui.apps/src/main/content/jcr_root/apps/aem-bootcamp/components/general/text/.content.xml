@@ -5,4 +5,4 @@
       jcr:primaryType="cq:Component"
       jcr:title="Text"
       sling:resourceSuperType="core/wcm/components/text/v2/text"
-      componentGroup="AEM BOOTCAMP - General" />
+      componentGroup="AEM Bootcamp Site - General"/>
