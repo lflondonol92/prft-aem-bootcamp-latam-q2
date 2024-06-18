@@ -1,0 +1,39 @@
+.cmp-footer {
+  &__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0 95px 16px;
+    background-color: $color-foreground;
+    color: $color-background;
+  }
+
+  &__head {
+    display: flex;
+    padding: 19px 0 5px 0;
+    gap: 10px;
+  }
+
+  &__logo-img {
+    .cmp-image__image {
+      width: 150px;
+      margin: 0;
+    }
+  }
+
+  &__navigation {
+    .cmp-navigation {
+      &__item-link {
+        color: $color-background;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__separator {
+  }
+
+  &__text {
+    line-height: 10px;
+  }
+}
