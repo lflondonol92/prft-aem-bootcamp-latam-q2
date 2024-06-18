@@ -45,7 +45,8 @@
                                                             height="{Long}316">
                                                             <linkAttributes
                                                                 jcr:primaryType="cq:WidgetCollection">
-                                                                <linkAdvanced />
+                                                                <linkAdvanced 
+                                                                jcr:primaryType="nt:unstructured"/>
                                                             </linkAttributes>
                                                         </linkDialogConfig>
                                                     </links>
