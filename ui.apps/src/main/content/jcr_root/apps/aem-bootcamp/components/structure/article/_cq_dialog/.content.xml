@@ -30,13 +30,15 @@
                         sizeLimit="100000000"
                         text="Upload file"
                         uploadUrl="/content/dam"
-                        uploadUrlBuilder="" />
+                        uploadUrlBuilder=""
+                        required="{Boolean}true" />
                     <description
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="cq/gui/components/authoring/dialog/richtext"
                         fieldLabel="Description"
                         name="./description"
-                        useFixedInlineToolbar="{Boolean}true">
+                        useFixedInlineToolbar="{Boolean}true"
+                        required="{Boolean}true">
                         <rtePlugins jcr:primaryType="nt:unstructured">
                             <format
                                 jcr:primaryType="nt:unstructured"

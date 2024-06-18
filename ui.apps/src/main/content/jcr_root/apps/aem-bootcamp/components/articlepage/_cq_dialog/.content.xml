@@ -36,7 +36,8 @@
                                         multiple="true"
                                         name="./articlecategories"
                                         rootPath="/content/cq:tags"
-                                        valueType="string[]" />
+                                        valueType="string[]" 
+                                        required="{Boolean}true" />
                                 </items>
                             </column>
                         </items>
