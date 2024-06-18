@@ -23,12 +23,6 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="wcm/core/components/policies/mapping"/>
                         </general>
-                        <structure jcr:primaryType="nt:unstructured">
-                            <footer
-                                cq:policy="aem-bootcamp/components/structure/footer/policy_1718734127087"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="wcm/core/components/policies/mapping"/>
-                        </structure>
                     </components>
                 </aem-bootcamp>
             </container>
@@ -44,19 +38,9 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="wcm/core/components/policies/mapping"/>
                         </general>
-                        <structure jcr:primaryType="nt:unstructured">
-                            <footer
-                                cq:policy="aem-bootcamp/components/structure/footer/policy_1718734127087"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="wcm/core/components/policies/mapping"/>
-                        </structure>
                     </components>
                 </aem-bootcamp>
-            </container_1729542432>
-            <experiencefragment_617058460
-                cq:policy="aem-bootcamp/components/experiencefragment/policy_17051999756099"
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/core/components/policies/mapping"/>
+            </container_1729542432>           
         </root>
     </jcr:content>
 </jcr:root>
