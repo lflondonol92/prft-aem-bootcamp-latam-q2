@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2024-06-18T14:10:21.829-05:00"
+        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/aem-bootcamp/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -13,14 +15,48 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aem-bootcamp/components/container"
             layout="responsiveGrid">
-            <separator
+            <footer
+                jcr:created="{Date}2024-06-18T12:32:54.238-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-06-18T12:32:54.238-05:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aem-bootcamp/components/separator"/>
-            <text
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="aem-bootcamp/components/text"
-                text="&lt;p>Copyright 2024, AEM Bootcamp Site.&amp;nbsp;All rights reserved.&lt;/p>&#xd;&#xa;&lt;p>345 Park Avenue,&amp;nbsp;San Jose, CA 95110-2704, USA&lt;/p>&#xd;&#xa;"
-                textIsRich="true"/>
+                sling:resourceType="aem-bootcamp/components/structure/footer">
+                <separator
+                    cq:styleIds="[1718732564428,1718732534932]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-bootcamp/components/general/separator">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="12"/>
+                    </cq:responsive>
+                </separator>
+                <image
+                    jcr:lastModified="{Date}2024-06-18T12:48:35.942-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-bootcamp/components/general/image"
+                    fileReference="/content/dam/aem-bootcamp/perficient-inc-vector-logo.png"/>
+                <footernav
+                    jcr:lastModified="{Date}2024-06-18T12:51:12.102-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-bootcamp/components/structure/footernav"
+                    collectAllPages="false"
+                    disableShadowing="false"
+                    navigationRoot="/content/aem-bootcamp/us/en/home"
+                    structureDepth="1"
+                    structureStart="1"/>
+                <text
+                    jcr:lastModified="{Date}2024-06-18T13:20:55.439-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-bootcamp/components/general/text"
+                    text="&lt;p>&lt;i>©2024, AEM Bootcamp Site.&lt;/i>&lt;/p>&#xd;&#xa;&lt;p>&lt;sub>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/sub>&lt;/p>&#xd;&#xa;&lt;p>&lt;sub>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/sub>&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
+            </footer>
         </root>
     </jcr:content>
 </jcr:root>
