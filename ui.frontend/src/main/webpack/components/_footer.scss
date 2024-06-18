@@ -15,14 +15,25 @@
   }
 
   &__logo-img {
-    .cmp-image__image {
-      width: 150px;
-      margin: 0;
+    width: 150px;
+    .cmp-image {
+      width: inherit;
+      &__image {
+        min-width: inherit;
+        width: inherit;
+        margin: 0;
+      }
+    }
+    &.image {
+      overflow: visible;
     }
   }
 
   &__navigation {
     .cmp-navigation {
+      &__group {
+        flex-wrap: wrap;
+      }
       &__item-link {
         color: $color-background;
         text-transform: uppercase;
@@ -35,5 +46,35 @@
 
   &__text {
     line-height: 10px;
+  }
+
+  //mobile
+  @media (max-width: 550px) {
+    &__wrapper {
+      padding: 0 40px 16px;
+    }
+
+    &__head {
+      flex-wrap: wrap;
+    }
+
+    &__text {
+      line-height: 14px;
+    }
+  }
+
+  //tablet
+  @media (max-width: 700px) {
+    &__navigation {
+      .cmp-navigation {
+        &__group {
+          padding: 0;
+        }
+      }
+    }
+
+    &__text {
+      line-height: 14px;
+    }
   }
 }
