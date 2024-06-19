@@ -89,7 +89,6 @@
                             name="website"
                             nameSuffix="contentReference"
                             renderReadOnly="false"
-                            required="on"
                             showEmptyInReadOnly="true"
                             showThumbnail="false"
                             valueType="string/reference">
