@@ -1,0 +1,34 @@
+.cmp-article {
+  &__image {
+    width: 95%;
+    margin: 0 2.5%;
+  }
+
+  &__tags {
+    color: $color-primary;
+  }
+
+  &__by {
+    text-transform: uppercase;
+  }
+
+  &__author {
+    display: flex;
+
+    &__image {
+      width: 10%;
+      clip-path: circle();
+      margin: 0 2.5%;
+    }
+
+    &__data {
+      h4 {
+        margin-bottom: 0;
+      }
+
+      h5 {
+        margin: 0;
+      }
+    }
+  }
+}
