@@ -1,5 +1,6 @@
 package com.aembootcamp.core.models;
 
+import com.adobe.cq.dam.cfm.ContentElement;
 import lombok.AccessLevel;
 import lombok.Getter;
 
@@ -61,38 +62,27 @@ public class ArticleModel {
     }
 
     private void fetchTagText() {
-        if (currentPage.getProperties().get("articlecategories") != null) {
-            String[] tags = (String[]) currentPage.getProperties().get("articlecategories");
-            categoriesTagText = String.join(", ", tags);
-        }
+        Optional<String[]> articleCategories = Optional
+                .ofNullable((String[]) currentPage.getProperties().get("articlecategories"));
+        categoriesTagText = articleCategories.map(tags -> String.join(", ", tags)).orElse(null);
     }
 
     private void fetchContentFragmentData() {
-        Optional<Resource> fragmentResourceOptional = Optional
-                .ofNullable(resourceResolver.getResource(authorContentFragment));
+        Optional<Resource> fragmentResourceOptional = Optional.ofNullable(resourceResolver.getResource(authorContentFragment));
 
-        fragmentResourceOptional.ifPresent(fragmentResourceAdaptToCF -> {
-            Optional<ContentFragment> cfAuthorOptional = Optional
-                    .ofNullable(fragmentResourceOptional.get().adaptTo(ContentFragment.class));
-
-            cfAuthorOptional.ifPresent(cfAuthorGetData -> {
-                Optional<String> authorNameOptional = Optional
-                        .ofNullable(cfAuthorOptional.get().getElement("authorName").getContent());
-                authorNameOptional.ifPresent(authorNameData -> {
-                    authorName = authorNameOptional.get();
-                });
-
-                Optional<String> authorDisplayPictureOptional = Optional
-                        .ofNullable(cfAuthorOptional.get().getElement("authorDisplayPicture").getContent());
-                authorDisplayPictureOptional.ifPresent(authorDisplayPictureData -> {
-                    authorDisplayPicture = authorDisplayPictureOptional.get();
-                });
-
-                Optional<String> authorBioOptional = Optional
-                        .ofNullable(cfAuthorOptional.get().getElement("authorBio").getContent());
-                authorBioOptional.ifPresent(authorBioData -> {
-                    authorBio = authorBioOptional.get();
-                });
+        fragmentResourceOptional.map(fragmentResource -> {
+            Optional<ContentFragment> cfAuthorOptional = Optional.ofNullable(fragmentResource.adaptTo(ContentFragment.class));
+            return cfAuthorOptional.map(cfAuthor -> {
+                authorName = Optional.ofNullable(cfAuthor.getElement("authorName"))
+                        .map(ContentElement::getContent)
+                        .orElse(null);
+                authorDisplayPicture = Optional.ofNullable(cfAuthor.getElement("authorDisplayPicture"))
+                        .map(ContentElement::getContent)
+                        .orElse(null);
+                authorBio = Optional.ofNullable(cfAuthor.getElement("authorBio"))
+                        .map(ContentElement::getContent)
+                        .orElse(null);
+                return cfAuthor;
             });
         });
     }

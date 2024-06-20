@@ -8,22 +8,28 @@
     />
   </sly>
   <i class="cmp-article__tags">${article.categoriesTagText}</i>
-  <h1 class="cmp-article__title">${article.title ? article.title : currentPage.title}</h1>
+  <h1 class="cmp-article__title">
+    ${article.title ? article.title : currentPage.title}
+  </h1>
   <sly data-sly-test="${article.authorName}"
     ><h4 class="cmp-article__by">BY ${article.authorName}</h4></sly
   >
   <div class="cmp-article__description">
     ${article.description @ context="html"}
   </div>
-  <div class="cmp-article__author">
-    <img
-      class="cmp-article__author__image"
-      src="${article.authorDisplayPicture}"
-      alt="${article.authorName}"
-    />
-    <div class="cmp-article__author__data">
-      <h4>${article.authorName}</h4>
-      <h5>${article.authorBio @ context="html"}</h5>
+  <sly
+    data-sly-test="${article.authorName && article.authorDisplayPicture && article.authorBio}"
+  >
+    <div class="cmp-article__author">
+      <img
+        class="cmp-article__author__image"
+        src="${article.authorDisplayPicture}"
+        alt="${article.authorName}"
+      />
+      <div class="cmp-article__author__data">
+        <h4>${article.authorName}</h4>
+        <h5>${article.authorBio @ context="html"}</h5>
+      </div>
     </div>
-  </div>
+  </sly>
 </div>
