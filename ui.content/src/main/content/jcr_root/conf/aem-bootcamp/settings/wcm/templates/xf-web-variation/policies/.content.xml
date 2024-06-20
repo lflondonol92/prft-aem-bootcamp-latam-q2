@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2024-06-18T13:59:28.850-05:00"
+        cq:lastModifiedBy="admin"
         cq:policy="aem-bootcamp/components/page/policy"
         jcr:primaryType="nt:unstructured"
         sling:resourceType="wcm/core/components/policies/mappings">
@@ -33,6 +35,16 @@
                         sling:resourceType="wcm/core/components/policies/mapping"/>
                 </components>
             </mysite>
+            <aem-bootcamp jcr:primaryType="nt:unstructured">
+                <components jcr:primaryType="nt:unstructured">
+                    <structure jcr:primaryType="nt:unstructured">
+                        <footer
+                            cq:policy="aem-bootcamp/components/structure/footer/policy_1718731262185"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wcm/core/components/policies/mapping"/>
+                    </structure>
+                </components>
+            </aem-bootcamp>
         </root>
     </jcr:content>
 </jcr:root>
