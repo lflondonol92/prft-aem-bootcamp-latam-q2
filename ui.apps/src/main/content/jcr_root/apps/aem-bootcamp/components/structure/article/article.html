@@ -7,9 +7,8 @@
       alt="${article.title}"
     />
   </sly>
-    <i class="cmp-article__tags">${article.categoriesTagText}</i>
-  </div>
-  <h1 class="cmp-article__title">${article.title}</h1>
+  <i class="cmp-article__tags">${article.categoriesTagText}</i>
+  <h1 class="cmp-article__title">${article.title ? article.title : currentPage.title}</h1>
   <sly data-sly-test="${article.authorName}"
     ><h4 class="cmp-article__by">BY ${article.authorName}</h4></sly
   >
