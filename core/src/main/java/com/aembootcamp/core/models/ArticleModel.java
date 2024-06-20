@@ -68,22 +68,21 @@ public class ArticleModel {
     }
 
     private void fetchContentFragmentData() {
-        Optional<Resource> fragmentResourceOptional = Optional.ofNullable(resourceResolver.getResource(authorContentFragment));
-
-        fragmentResourceOptional.map(fragmentResource -> {
-            Optional<ContentFragment> cfAuthorOptional = Optional.ofNullable(fragmentResource.adaptTo(ContentFragment.class));
-            return cfAuthorOptional.map(cfAuthor -> {
-                authorName = Optional.ofNullable(cfAuthor.getElement("authorName"))
-                        .map(ContentElement::getContent)
-                        .orElse(null);
-                authorDisplayPicture = Optional.ofNullable(cfAuthor.getElement("authorDisplayPicture"))
-                        .map(ContentElement::getContent)
-                        .orElse(null);
-                authorBio = Optional.ofNullable(cfAuthor.getElement("authorBio"))
-                        .map(ContentElement::getContent)
-                        .orElse(null);
-                return cfAuthor;
-            });
-        });
+        Optional.ofNullable(resourceResolver.getResource(authorContentFragment))
+                .ifPresent(fragmentResource -> {
+                    Optional<ContentFragment> cfAuthorOptional = Optional
+                            .ofNullable(fragmentResource.adaptTo(ContentFragment.class));
+                    cfAuthorOptional.ifPresent(cfAuthor -> {
+                        authorName = Optional.ofNullable(cfAuthor.getElement("authorName"))
+                                .map(ContentElement::getContent)
+                                .orElse(null);
+                        authorDisplayPicture = Optional.ofNullable(cfAuthor.getElement("authorDisplayPicture"))
+                                .map(ContentElement::getContent)
+                                .orElse(null);
+                        authorBio = Optional.ofNullable(cfAuthor.getElement("authorBio"))
+                                .map(ContentElement::getContent)
+                                .orElse(null);
+                    });
+                });
     }
 }
