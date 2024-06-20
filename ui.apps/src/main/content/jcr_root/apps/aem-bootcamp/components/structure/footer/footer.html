@@ -1,21 +1,20 @@
 <footer class="cmp-footer">
-    <div class="cmp-footer__wrapper">
-      <div
-        class="cmp-footer__head"
-        data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
-      >
-        <sly
-          data-sly-resource="${'image' @ resourceType='/apps/aem-bootcamp/components/general/image', decoration=true, cssClassName='cmp-footer__logo-img'}"
-        ></sly>
-        <sly
-          data-sly-resource="${'footernav' @ resourceType='/apps/aem-bootcamp/components/structure/footernav', decoration=true, cssClassName='cmp-footer__navigation'}"
-        ></sly>
-      </div>
-      <sly
-        data-sly-resource="${'separator' @ resourceType='/apps/aem-bootcamp/components/general/separator', decoration=true, cssClassName='cmp-footer__separator'}"
-      ></sly>
-      <sly
-        data-sly-resource="${'text' @ resourceType='/apps/aem-bootcamp/components/general/text', decoration=true, cssClassName='cmp-footer__text'}"
-      ></sly>
-    </div>
-  </footer>
+  <div class="cmp-footer__links">
+    <div
+      class="cmp-footer__logo"
+      data-sly-resource="${'image' @ resourceType='/apps/aem-bootcamp/components/general/image', decoration=true}"
+    ></div>
+    <div
+      class="cmp-footer__nav"
+      data-sly-resource="${'footernav' @ resourceType='/apps/aem-bootcamp/components/structure/footernav', decoration=true}"
+    ></div>
+  </div>
+  <div
+    class="cmp-footer__separator"
+    data-sly-resource="${'separator' @ resourceType='/apps/aem-bootcamp/components/general/separator', decoration=true}"
+  ></div>
+  <div
+    class="cmp-footer__text"
+    data-sly-resource="${'text' @ resourceType='/apps/aem-bootcamp/components/general/text', decoration=true}"
+  ></div>
+</footer>
