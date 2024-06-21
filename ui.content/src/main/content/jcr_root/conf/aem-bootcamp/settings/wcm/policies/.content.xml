@@ -276,10 +276,13 @@
                 </policy_649128221558427>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2024-06-18T12:41:52.234-05:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Bootcamp Site - Content,/apps/aem-bootcamp/components/form/container]">
+                    components="[/apps/aem-bootcamp/components/form/container,/apps/aem-bootcamp/components/general/image,/apps/aem-bootcamp/components/general/separator,/apps/aem-bootcamp/components/structure/footer]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -370,6 +373,114 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <structure jcr:primaryType="nt:unstructured">
+                <footer jcr:primaryType="nt:unstructured">
+                    <policy_1718731262185
+                        jcr:lastModified="{Date}2024-06-18T12:27:30.931-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="test"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="/apps/aem-bootcamp/components/structure/footer"
+                        layoutDisabled="false">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1718731262185>
+                </footer>
+            </structure>
+            <general jcr:primaryType="nt:unstructured">
+                <separator jcr:primaryType="nt:unstructured">
+                    <policy_1718732514456
+                        jcr:lastModified="{Date}2024-06-18T13:59:28.840-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Separator styles"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        isDecorative="false">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Visibility"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-separator--hide"
+                                        cq:styleId="1718732521345"
+                                        cq:styleLabel="Hide"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                            <item1
+                                cq:styleGroupLabel="Color"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-separator--grey"
+                                        cq:styleId="1718732531452"
+                                        cq:styleLabel="Grey"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="cmp-separator--black"
+                                        cq:styleId="1718732532022"
+                                        cq:styleLabel="Black"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item2
+                                        cq:styleClasses="cmp-separator--white"
+                                        cq:styleId="1718732532712"
+                                        cq:styleLabel="White"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item3
+                                        cq:styleClasses="cmp-separator--yellow"
+                                        cq:styleId="1718732533937"
+                                        cq:styleLabel="Yellow"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item4
+                                        cq:styleClasses="cmp-separator--red"
+                                        cq:styleId="1718732534932"
+                                        cq:styleLabel="Red"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item5
+                                        cq:styleClasses="cmp-separator--blue"
+                                        cq:styleId="1718732540272"
+                                        cq:styleLabel="Blue"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item1>
+                            <item2
+                                cq:styleGroupLabel="Style"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-separator--dashed"
+                                        cq:styleId="1718732554385"
+                                        cq:styleLabel="Dashed"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="cmp-separator--dotted"
+                                        cq:styleId="1718732555133"
+                                        cq:styleLabel="Dotted"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item2>
+                            <item3
+                                cq:styleGroupLabel="Thickness"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-separator--thin"
+                                        cq:styleId="1718732564428"
+                                        cq:styleLabel="Thin"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="cmp-separator--thick"
+                                        cq:styleId="1718732565146"
+                                        cq:styleLabel="Thick"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item3>
+                        </cq:styleGroups>
+                    </policy_1718732514456>
+                </separator>
+            </general>
         </components>
     </aem-bootcamp>
     <wcm jcr:primaryType="nt:unstructured">
