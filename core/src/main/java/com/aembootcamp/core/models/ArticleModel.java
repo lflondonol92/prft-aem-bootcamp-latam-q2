@@ -1,5 +1,6 @@
 package com.aembootcamp.core.models;
 
+import com.day.cq.tagging.Tag;
 import lombok.AccessLevel;
 import lombok.Getter;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -14,9 +15,13 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import com.adobe.cq.dam.cfm.ContentElement;
 import com.adobe.cq.dam.cfm.ContentFragment;
+import com.day.cq.tagging.TagManager;
 import com.day.cq.wcm.api.Page;
 
+import java.util.Arrays;
+import java.util.Objects;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
 
@@ -66,7 +71,17 @@ public class ArticleModel {
 
     private void fetchTagText() {
         Optional<String[]> articleCategories = Optional.ofNullable((String[]) currentPage.getProperties().get("articlecategories"));
-        categoriesTagText = articleCategories.map(tags -> String.join(", ", tags)).orElse(null);
+        TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
+
+        if (tagManager!=null) {
+            categoriesTagText = articleCategories
+                .stream()
+                .flatMap(Arrays::stream)
+                .map(tagIds -> tagManager.resolve(String.valueOf(tagIds)))
+                .filter(Objects::nonNull)
+                .map(Tag::getTitle)
+                .collect(Collectors.joining(", "));
+        }
     }
 
     private void fetchContentFragmentData() {

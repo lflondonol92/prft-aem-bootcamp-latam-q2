@@ -4,7 +4,7 @@
   data-sly-use.template="core/wcm/components/commons/v1/templates.html"
   data-sly-call="${template.placeholder @ isEmpty=empty}"
 />
-<sly data-sly-test="${!empty}" data-sly-test.author="article.authorName">
+<sly data-sly-test="${!empty}">
   <article class="cmp-article">
     <div class="cmp-article__img-container">
       <img
@@ -18,7 +18,10 @@
     <h1 class="cmp-article__title">
       ${article.title || article.currentPage.title}
     </h1>
-    <div class="cmp-article__by-author-name" data-sly-test="${author}">
+    <div
+      class="cmp-article__by-author-name"
+      data-sly-test.author="${article.authorName}"
+    >
       By ${article.authorName}
     </div>
     <div class="cmp-article__text">
