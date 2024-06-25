@@ -2,10 +2,11 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2024-06-25T09:15:55.267-05:00"
+        cq:lastModified="{Date}2024-06-25T14:38:38.727-05:00"
         cq:lastModifiedBy="admin"
-        cq:templateType="/conf/aem-bootcamp/settings/wcm/template-types/page"
+        cq:templateType="/conf/aem-bootcamp/settings/wcm/template-types/base-template"
+        jcr:description="This is Template for Articles"
         jcr:primaryType="cq:PageContent"
         jcr:title="article"
-        status="enabled"/>
+        status="draft"/>
 </jcr:root>
