@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2024-06-25T14:38:38.727-05:00"
+        cq:lastModified="{Date}2024-06-25T15:44:45.353-05:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aem-bootcamp/settings/wcm/templates/article"
         jcr:primaryType="cq:PageContent"
