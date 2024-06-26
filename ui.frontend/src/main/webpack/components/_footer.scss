@@ -1,0 +1,44 @@
+.cmp-footer {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 0 5% 1%;
+
+  &__links {
+    display: flex;
+  }
+
+  &__logo {
+    margin: auto 5% auto 0;
+
+    .cmp-image {
+      width: 100px;
+    }
+  }
+
+  .cmp-navigation__group {
+    padding: 0;
+    list-style: none;
+    column-gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .cmp-navigation__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    height: 40px;
+    color: $color-foreground;
+    text-transform: uppercase;
+    padding: 0 5px;
+  }
+
+  .cmp-navigation__item-link {
+    text-decoration: none;
+    color: $color-white;
+  }
+
+  .cmp-navigation__item:hover .cmp-navigation__item-link {
+    border-bottom: $color-primary 2px solid;
+  }
+}

@@ -5,6 +5,7 @@
     <page-content/>
     <xf-web-variation/>
     <rep:policy/>
-    <homepage/>
     <landing-page/>
+    <homepage/>
+    <article/>
 </jcr:root>
