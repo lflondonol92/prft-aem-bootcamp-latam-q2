@@ -1,1 +1,24 @@
-.cmp-container {}
+.cmp-container {
+}
+
+.cmp-container__black {
+  background-color: $color-black;
+  color: $color-white;
+
+  .cmp-navigation__item-link {
+    color: $color-white;
+  }
+}
+
+.cmp-container__red {
+    background-color: $color-primary;
+    color: $color-white;
+  
+    .cmp-navigation__item-link {
+      color: $color-white;
+
+      &:hover {
+        border-bottom: solid 2px $color-black !important;
+      }
+    }
+  }

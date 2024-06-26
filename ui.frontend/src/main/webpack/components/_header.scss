@@ -5,7 +5,6 @@
   .cmp-image--logo {
     flex: 1;
     margin: auto;
-    padding-left: 20px;
 
     .cmp-image {
       width: 100px;
@@ -19,7 +18,7 @@
       display: flex;
       padding: 0;
       list-style: none;
-      column-gap: 5px;
+      column-gap: 20px;
     }
 
     .cmp-navigation__item {
