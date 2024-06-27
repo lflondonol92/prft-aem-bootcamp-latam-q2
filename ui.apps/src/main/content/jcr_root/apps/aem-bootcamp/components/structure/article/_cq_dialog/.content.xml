@@ -6,7 +6,7 @@
   xmlns:cq="http://www.day.com/jcr/cq/1.0"
   xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
   jcr:primaryType="nt:unstructured"
-  jcr:title="article"
+  jcr:title="Article"
   sling:resourceType="cq/gui/components/authoring/dialog"
 >
   <content
