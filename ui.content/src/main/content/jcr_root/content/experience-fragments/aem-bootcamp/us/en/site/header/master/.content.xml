@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2024-06-26T14:57:23.802-05:00"
+        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/aem-bootcamp/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -10,25 +12,37 @@
         jcr:title="Header"
         sling:resourceType="aem-bootcamp/components/xfpage">
         <root
+            jcr:lastModified="{Date}2024-06-26T14:57:14.233-05:00"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aem-bootcamp/components/container"
-            layout="simple">
-            <navigation
+            layout="responsiveGrid">
+            <header
+                jcr:created="{Date}2024-06-12T07:18:14.487-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-06-12T07:19:09.694-05:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aem-bootcamp/components/navigation"
-                collectAllPages="false"
-                navigationRoot="/content/aem-bootcamp/us/en"
-                skipNavigationRoot="false"
-                structureDepth="1"/>
-            <languagenavigation
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="aem-bootcamp/components/languagenavigation"
-                navigationRoot="/content/aem-bootcamp/us"
-                structureDepth="2"/>
-            <search
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="aem-bootcamp/components/search"
-                searchRoot="/content/aem-bootcamp/us"/>
+                sling:resourceType="aem-bootcamp/components/structure/header"
+                altText="Logo"
+                fileReference="/content/dam/aem-bootcamp/brand/perficient-logo.png"
+                logoLink="/content/aem-bootcamp/us/en/home">
+                <navigations jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        rootPath="/content/aem-bootcamp/us/en/home/adventure"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        rootPath="/content/aem-bootcamp/us/en/home/magazine"/>
+                </navigations>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
+            </header>
+            <logo/>
         </root>
     </jcr:content>
 </jcr:root>

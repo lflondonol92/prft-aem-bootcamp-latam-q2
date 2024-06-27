@@ -2,7 +2,7 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2024-06-12T07:13:31.060-05:00"
+        cq:lastModified="{Date}2024-06-26T17:01:08.612-05:00"
         cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/aem-bootcamp/settings/wcm/templates/xf-web-variation"
@@ -15,41 +15,75 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aem-bootcamp/components/container"
             layout="responsiveGrid">
-            <footer
-                jcr:created="{Date}2024-06-11T18:49:24.551-05:00"
+            <container
+                cq:styleIds="[1719435182601]"
+                jcr:created="{Date}2024-06-26T15:54:58.536-05:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2024-06-11T18:49:24.551-05:00"
+                jcr:lastModified="{Date}2024-06-26T15:55:42.169-05:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aem-bootcamp/components/structure/footer"
-                action="/content/usergenerated/experience-fragments/aem-bootcamp/us/en/site/footer/master/cq-gen1718149764556/"
-                actionType="foundation/components/form/actions/store">
-                <image
-                    jcr:lastModified="{Date}2024-06-11T18:49:52.186-05:00"
+                sling:resourceType="aem-bootcamp/components/container"
+                layout="responsiveGrid">
+                <footer
+                    jcr:created="{Date}2024-06-19T17:22:18.273-05:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-06-19T17:22:41.616-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-bootcamp/components/general/image"
-                    alt="Logo"
-                    fileReference="/content/dam/aem-bootcamp/brand/perficient-logo.png"
-                    linkURL="/content/aem-bootcamp/us/en/home"/>
-                <footernav
-                    jcr:lastModified="{Date}2024-06-11T18:49:59.186-05:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-bootcamp/components/structure/footernav"
-                    navigationRoot="/content/aem-bootcamp/us/en/home"/>
-                <separator
-                    cq:styleIds="[1717594100742]"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-bootcamp/components/general/separator"/>
-                <text
-                    jcr:lastModified="{Date}2024-06-12T07:13:31.027-05:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-bootcamp/components/general/text"
-                    text="&lt;p>© 2024, AEM Bootcamp Site.&lt;/p>&#xd;&#xa;&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.&lt;/p>&#xd;&#xa;&lt;p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p>&#xd;&#xa;"
-                    textIsRich="true"/>
-            </footer>
+                    sling:resourceType="aem-bootcamp/components/structure/footer"
+                    layout="responsiveGrid">
+                    <image
+                        jcr:lastModified="{Date}2024-06-19T17:24:20.832-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aem-bootcamp/components/general/image"
+                        fileReference="/content/dam/aem-bootcamp/brand/perficient-logo-white.png">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="2"/>
+                        </cq:responsive>
+                    </image>
+                    <footernav
+                        jcr:lastModified="{Date}2024-06-19T17:24:33.355-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aem-bootcamp/components/structure/footernav"
+                        navigationRoot="/content/aem-bootcamp/us/en/home">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="9"/>
+                        </cq:responsive>
+                    </footernav>
+                    <text
+                        jcr:lastModified="{Date}2024-06-19T17:49:08.858-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aem-bootcamp/components/general/text"
+                        text="&lt;p>© 2024, AEM Bootcamp Site.&lt;/p>&#xd;&#xa;&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. Nulla facilisi nullam vehicula ipsum a arcu cursus. Mauris vitae ultricies leo integer malesuada. Aenean sed adipiscing diam donec. Integer enim neque volutpat ac tincidunt vitae semper. Augue eget arcu dictum varius duis at consectetur lorem donec. &lt;/p>&#xd;&#xa;&lt;p>Rhoncus mattis rhoncus urna neque. Leo urna molestie at elementum eu facilisis. Ultrices dui sapien eget mi proin sed. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim.&lt;/p>&#xd;&#xa;"
+                        textIsRich="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="10"/>
+                        </cq:responsive>
+                    </text>
+                    <separator
+                        cq:styleIds="[1717594100742]"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aem-bootcamp/components/general/separator"/>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="10"/>
+                    </cq:responsive>
+                </footer>
+            </container>
         </root>
     </jcr:content>
 </jcr:root>
