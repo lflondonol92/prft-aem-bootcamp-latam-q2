@@ -1,0 +1,71 @@
+.cmp-article {
+    padding: 0 6vw;
+    &__title {
+      font-weight: normal;
+      font-size: xx-large;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+    &__by-author-name {
+      font-size: large;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    &__img-container {
+      display: flex;
+      justify-content: center;
+      max-height: 600px;
+    }
+    &__img {
+      object-fit: cover;
+      height: auto;
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+    &__tags {
+      font-style: italic;
+      color: rgb(206, 62, 62);
+    }
+    &__text {
+      text-transform: capitalize;
+    }
+    &__author {
+      display: flex;
+      margin: 30px 0;
+      gap: 24px;
+      padding-top: 30px;
+      border-top: solid 1px rgb(205, 204, 204);
+    }
+  
+    &__author-description {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    &__author-picture {
+      height: 80px;
+      width: 80px;
+      border-radius: 100%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    &__author-name {
+      font-size: x-large;
+      font-style: italic;
+      margin: 0;
+    }
+    &__author-bio {
+      margin: 0;
+      font-size: 14px;
+      color: grey;
+  
+      p {
+        margin: 0;
+      }
+    }
+  
+    @media (min-width: 1024px) {
+      padding: 0;
+      margin: 0 auto;
+      width: 1024px;
+    }
+  }
