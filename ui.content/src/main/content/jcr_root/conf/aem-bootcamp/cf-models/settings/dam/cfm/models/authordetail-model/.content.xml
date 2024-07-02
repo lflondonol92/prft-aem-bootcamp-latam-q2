@@ -4,7 +4,7 @@
     allowedPaths="[/content/entities(/.*)?]"
     ranking="{Long}100">
     <jcr:content
-        cq:lastModified="{Date}2024-06-12T15:57:43.423-05:00"
+        cq:lastModified="{Date}2024-07-02T13:52:05.469-05:00"
         cq:lastModifiedBy="admin"
         cq:scaffolding="/conf/aem-bootcamp/cf-models/settings/dam/cfm/models/authordetail-model/jcr:content/model"
         cq:templateType="/libs/settings/dam/cfm/model-types/fragment"
@@ -24,7 +24,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq/gui/components/authoring/dialog">
                 <content
-                    jcr:lastModified="{Date}2024-06-12T15:57:43.423-05:00"
+                    jcr:lastModified="{Date}2024-07-02T13:52:05.469-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
@@ -108,6 +108,7 @@
                             renderReadOnly="false"
                             required="on"
                             showEmptyInReadOnly="true"
+                            validation="cfm.validation.email"
                             valueType="string">
                             <granite:data jcr:primaryType="nt:unstructured"/>
                         </_x0031_718222339335>
