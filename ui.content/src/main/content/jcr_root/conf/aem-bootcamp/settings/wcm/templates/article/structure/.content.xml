@@ -5,7 +5,7 @@
         cq:deviceGroups="[mobile/groups/responsive]"
         cq:lastModified="{Date}2024-05-22T17:05:44.283-05:00"
         cq:lastModifiedBy="admin"
-        cq:template="/conf/aem-bootcamp/settings/wcm/templates/article"
+        cq:template="/conf/aem-bootcamp/settings/wcm/templates/article-page"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="aem-bootcamp/components/articlepage">
         <root

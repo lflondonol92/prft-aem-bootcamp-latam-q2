@@ -1,6 +1,7 @@
 .cmp-layoutcontainer--header {
   display: flex;
   background-color: $color-white;
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,.04);
 
   .cmp-image--logo {
     flex: 1;

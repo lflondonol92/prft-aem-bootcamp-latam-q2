@@ -1,4 +1,5 @@
 .cmp-container {
+  padding: 10px 0;
 }
 
 .cmp-container__black {
@@ -11,14 +12,26 @@
 }
 
 .cmp-container__red {
-    background-color: $color-primary;
-    color: $color-white;
-  
-    .cmp-navigation__item-link {
-      color: $color-white;
+  background-color: $color-primary;
+  color: $color-white;
 
-      &:hover {
-        border-bottom: solid 2px $color-black !important;
-      }
+  .cmp-navigation__item-link {
+    color: $color-white;
+
+    &:hover {
+      border-bottom: solid 2px $color-black !important;
     }
   }
+}
+
+.cmp-container__brand {
+  .cmp-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .cmp-image {
+    width: 40px;
+  }
+}
