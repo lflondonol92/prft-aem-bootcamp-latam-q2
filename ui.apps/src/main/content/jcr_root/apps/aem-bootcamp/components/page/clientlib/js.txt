@@ -1,2 +1,0 @@
-#base=js
-opengraph.js
