@@ -1,0 +1,46 @@
+<sly
+  data-sly-use.article="com.aembootcamp.core.models.ArticleModel"
+  data-sly-test.empty="${!article.description}"
+  data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+  data-sly-call="${template.placeholder @ isEmpty=empty}"
+/>
+<sly data-sly-test="${!empty}">
+  <article class="cmp-article">
+    <div class="cmp-article__img-container">
+      <img
+        src="${article.fileReference}"
+        loading="lazy"
+        class="cmp-article__img"
+        alt="${article.altText @ context='text'}"
+      />
+    </div>
+    <div class="cmp-article__tags">${article.categoriesTagText}</div>
+    <h1 class="cmp-article__title">
+      ${article.title || article.currentPage.title}
+    </h1>
+    <div
+      class="cmp-article__by-author-name"
+      data-sly-test.author="${article.authorName}"
+    >
+      By ${article.authorName}
+    </div>
+    <div class="cmp-article__text">
+      <div data-sly-text="${article.description @ context='html'}"></div>
+    </div>
+    <div class="cmp-article__author" data-sly-test="${author}">
+      <img
+        src=" ${article.authorDisplayPicture}"
+        loading="lazy"
+        class="cmp-article__author-picture"
+        alt="${article.altText @ context='text'}"
+      />
+      <div class="cmp-article__author-description">
+        <div class="cmp-article__author-name">${article.authorName}</div>
+        <div
+          class="cmp-article__author-bio"
+          data-sly-text="${article.authorBio @ context='html'}"
+        ></div>
+      </div>
+    </div>
+  </article>
+</sly>
