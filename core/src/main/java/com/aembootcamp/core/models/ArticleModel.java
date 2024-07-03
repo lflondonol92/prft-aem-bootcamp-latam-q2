@@ -26,6 +26,10 @@ import javax.annotation.PostConstruct;
 public class ArticleModel {
 
     protected static final String RESOURCE_TYPE = "aem-bootcamp/components/structure/article";
+    private static final String AUTHOR_NAME = "authorName";
+    private static final String AUTHOR_DISPLAY_PICTURE = "authorDisplayPicture";
+    private static final String AUTHOR_BIO = "authorBio";
+    private static final String ARTICLE_CATEGORIES = "articlecategories";
 
     @ValueMapValue
     private String title;
@@ -64,22 +68,22 @@ public class ArticleModel {
         fetchContentFragmentData();
     }
 
-    private void fetchTagText() {
-        Optional<String[]> articleCategories = Optional.ofNullable((String[]) currentPage.getProperties().get("articlecategories"));
+    public void fetchTagText() {
+        Optional<String[]> articleCategories = Optional.ofNullable((String[]) currentPage.getProperties().get(ARTICLE_CATEGORIES));
         categoriesTagText = articleCategories.map(tags -> String.join(", ", tags)).orElse(null);
     }
 
-    private void fetchContentFragmentData() {
+    public void fetchContentFragmentData() {
         Optional<Resource> fragmentResourceOptional = Optional.ofNullable(resourceResolver.getResource(authorContentFragment));
 
         fragmentResourceOptional.ifPresent(fragmentResource -> Optional.ofNullable(fragmentResource.adaptTo(ContentFragment.class)).map(cfAuthor -> {
-            authorName = Optional.ofNullable(cfAuthor.getElement("authorName"))
+            authorName = Optional.ofNullable(cfAuthor.getElement(AUTHOR_NAME))
                     .map(ContentElement::getContent)
                     .orElse(null);
-            authorDisplayPicture = Optional.ofNullable(cfAuthor.getElement("authorDisplayPicture"))
+            authorDisplayPicture = Optional.ofNullable(cfAuthor.getElement(AUTHOR_DISPLAY_PICTURE))
                     .map(ContentElement::getContent)
                     .orElse(null);
-            authorBio = Optional.ofNullable(cfAuthor.getElement("authorBio"))
+            authorBio = Optional.ofNullable(cfAuthor.getElement(AUTHOR_BIO))
                     .map(ContentElement::getContent)
                     .orElse(null);
             return cfAuthor;
