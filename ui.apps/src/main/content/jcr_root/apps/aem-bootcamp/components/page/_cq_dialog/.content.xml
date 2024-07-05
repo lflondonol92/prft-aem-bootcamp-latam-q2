@@ -87,82 +87,47 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/container">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <title
+                                    <ogtitle
                                         granite:class="page-title-field"
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                         fieldLabel="og:title"
-                                        name="./title"
+                                        name="./ogtitle"
                                         required="{Boolean}false"/>
-                                    <description
+                                    <ogdescription
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                         fieldLabel="og:description"
-                                        name="./description"
+                                        name="./ogdescription"
                                         required="{Boolean}false"/>
-                                    <type
+                                    <ogtype
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
                                         fieldLabel="og:type"
-                                        name="./type"
-                                        required="{Boolean}false">
-                                        <items jcr:primaryType="nt:unstructured">
-                                            <item1
-                                                jcr:primaryType="nt:unstructured"
-                                                text="default"
-                                                value="default"/>
-                                            <item2
-                                                jcr:primaryType="nt:unstructured"
-                                                text="website"
-                                                value="website"/>
-                                            <item3
-                                                jcr:primaryType="nt:unstructured"
-                                                text="article"
-                                                value="article"/>
-                                            <item4
-                                                jcr:primaryType="nt:unstructured"
-                                                text="blog"
-                                                value="blog"/>
-                                        </items>
-                                    </type>
-                                    <image
+                                        name="./ogtype">
+                                        <datasource
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="acs-commons/components/utilities/genericlist/datasource"
+                                            path="/etc/acs-commons/lists/open-graph/type"/>
+                                    </ogtype>
+                                    <ogimage
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
                                         fieldLabel="og:image"
-                                        name="./image"
+                                        name="./ogimage"
                                         required="{Boolean}false"
                                         rootPath="/content/dam"
                                         emptyText="Select Image"/>
-                                    <card
+                                    <twittercard
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
                                         fieldLabel="twitter:card"
-                                        name="./card"
-                                        required="{Boolean}false">
-                                        <items jcr:primaryType="nt:unstructured">
-                                            <item1
-                                                jcr:primaryType="nt:unstructured"
-                                                text="default"
-                                                value="default"/>
-                                            <item2
-                                                jcr:primaryType="nt:unstructured"
-                                                text="summary"
-                                                value="summary"/>
-                                            <item3
-                                                jcr:primaryType="nt:unstructured"
-                                                text="blog"
-                                                value="blog"/>
-                                            <item4
-                                                jcr:primaryType="nt:unstructured"
-                                                text="helps"
-                                                value="helps"/>
-                                        </items>
-                                    </card>
-                                    <url
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
-                                        fieldLabel="og:Url"
-                                        name="./url"/>
+                                        name="./twittercard">
+                                        <datasource
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="acs-commons/components/utilities/genericlist/datasource"
+                                            path="/etc/acs-commons/lists/open-graph/twitter-card"/>
+                                    </twittercard>
                                 </items>
                             </column>
                         </items>
