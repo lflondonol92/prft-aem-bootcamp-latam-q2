@@ -2,7 +2,7 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2024-07-02T11:58:48.355-05:00"
+        cq:lastModified="{Date}2024-07-02T17:37:25.560-05:00"
         cq:lastModifiedBy="admin"
         cq:templateType="/conf/aem-bootcamp/settings/wcm/template-types/base-template"
         jcr:description="This is Landing Page Template for AEM Bootcamp"

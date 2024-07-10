@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-07-02T19:51:04.827-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aem-bootcamp/settings/wcm/templates/article"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Cloud Computing"
+        sling:resourceType="aem-bootcamp/components/articlepage"
+        articlecategories="[articles:technology]"
+        navTitle="Cloud Computing">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aem-bootcamp/components/container"
+            layout="responsiveGrid">
+            <container_1593565191
+                jcr:created="{Date}2024-05-22T16:42:11.004-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-05-22T17:05:16.103-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-bootcamp/components/container"
+                layout="responsiveGrid"/>
+            <container
+                jcr:created="{Date}2024-05-22T16:42:06.671-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-05-22T17:05:18.074-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-bootcamp/components/container"
+                layout="responsiveGrid">
+                <article
+                    jcr:created="{Date}2024-07-02T15:14:09.219-05:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-07-02T19:51:04.825-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-bootcamp/components/structure/article"
+                    authorContentFragment="/content/dam/aem-bootcamp/content-fragments/authordetail-cf"
+                    description="&lt;p>Cloud computing has revolutionized how businesses store, manage, and process data. From Software-as-a-Service (SaaS) to Infrastructure-as-a-Service (IaaS), cloud solutions offer scalability, flexibility, and cost-efficiency. As organizations shift from on-premises to cloud-based infrastructures, they gain agility to innovate rapidly and scale operations seamlessly. Hybrid and multi-cloud environments further optimize performance and resilience, enabling businesses to leverage the best of both worlds.&lt;/p>&#xd;&#xa;&lt;p>Cloud service models provide distinct benefits:&lt;/p>&#xd;&#xa;&lt;ol>&#xd;&#xa;&lt;li>&lt;p>&lt;b>SaaS (Software-as-a-Service)&lt;/b>:&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Delivery of software over the internet&lt;/li>&#xd;&#xa;&lt;li>Accessibility from any device with an internet connection&lt;/li>&#xd;&#xa;&lt;li>Reduced costs associated with hardware and maintenance&lt;/li>&#xd;&#xa;&lt;li>Automatic updates and patch management&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li>&lt;p>&lt;b>IaaS (Infrastructure-as-a-Service)&lt;/b>:&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Provision of virtualized computing resources over the internet&lt;/li>&#xd;&#xa;&lt;li>Scalability to handle varying workloads&lt;/li>&#xd;&#xa;&lt;li>Flexibility to build and manage applications without physical infrastructure&lt;/li>&#xd;&#xa;&lt;li>Cost-efficiency by paying only for what you use&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li>&lt;p>&lt;b>PaaS (Platform-as-a-Service)&lt;/b>:&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Provides a platform allowing customers to develop, run, and manage applications&lt;/li>&#xd;&#xa;&lt;li>Simplifies the development process with built-in software components&lt;/li>&#xd;&#xa;&lt;li>Speeds up time-to-market with pre-configured development environments&lt;/li>&#xd;&#xa;&lt;li>Reduces complexity in managing hardware and software layers&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ol>&#xd;&#xa;&lt;p>With advancements in cloud technologies such as serverless computing and edge computing, the future promises even greater efficiency and connectivity across global digital ecosystems. Businesses that adopt these cloud solutions can expect to achieve significant operational improvements and drive innovation within their industries.&lt;/p>&#xd;&#xa;"
+                    fileReference="/content/dam/aem-bootcamp/home/tech/cloud.jpg"
+                    textIsRich="true"
+                    title="The Evolution of Cloud Computing">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="10"/>
+                    </cq:responsive>
+                </article>
+            </container>
+            <experiencefragment
+                jcr:created="{Date}2024-05-22T16:41:54.189-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-05-22T17:05:31.492-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-bootcamp/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/aem-bootcamp/us/en/site/header/master"/>
+            <experiencefragment_405537399
+                jcr:created="{Date}2024-05-22T16:42:14.288-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-05-22T17:05:44.280-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-bootcamp/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/aem-bootcamp/us/en/site/footer/master"/>
+        </root>
+    </jcr:content>
+</jcr:root>

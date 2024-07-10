@@ -271,12 +271,12 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1716414385646>
                 <policy_33903095635976
-                    jcr:lastModified="{Date}2024-07-02T09:28:02.578-05:00"
+                    jcr:lastModified="{Date}2024-07-02T14:18:34.816-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="General Group"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Bootcamp Site - Content,group:AEM Bootcamp Site - Form,group:AEM Bootcamp Site - General,group:AEM Bootcamp Site - Structure]"
+                    components="[group:AEM Bootcamp Site - Content,group:AEM Bootcamp Site - Form,group:AEM Bootcamp Site - General,group:AEM Bootcamp Site - Structure,/libs/core/wcm/components/teaser/v2/teaser]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_33903095635976>
@@ -389,7 +389,7 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_1719435134410
-                    jcr:lastModified="{Date}2024-07-02T11:40:05.552-05:00"
+                    jcr:lastModified="{Date}2024-07-02T14:13:29.951-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Background containers"
@@ -421,6 +421,11 @@
                                     cq:styleClasses="cmp-container__brand"
                                     cq:styleId="1719933272684"
                                     cq:styleLabel="Brands"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-container__articles"
+                                    cq:styleId="1719947605006"
+                                    cq:styleLabel="Articles"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item1>
@@ -584,7 +589,7 @@
                 </text>
                 <separator jcr:primaryType="nt:unstructured">
                     <policy_1717593874725
-                        jcr:lastModified="{Date}2024-06-07T15:49:39.872-05:00"
+                        jcr:lastModified="{Date}2024-07-02T17:37:25.550-05:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Footer Separator"

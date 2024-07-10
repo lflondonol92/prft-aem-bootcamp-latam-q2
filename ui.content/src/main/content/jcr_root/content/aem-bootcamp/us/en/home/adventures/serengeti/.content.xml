@@ -2,11 +2,14 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2024-07-02T15:17:39.599-05:00"
+        cq:lastModified="{Date}2024-07-02T15:22:01.100-05:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aem-bootcamp/settings/wcm/templates/article"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="aem-bootcamp/components/articlepage">
+        jcr:title="Serengeti"
+        sling:resourceType="aem-bootcamp/components/articlepage"
+        articlecategories="[articles:adventures/wildlife]"
+        navTitle="Safari in the Serengeti">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aem-bootcamp/components/container"
@@ -30,10 +33,15 @@
                 <article
                     jcr:created="{Date}2024-07-02T15:14:09.219-05:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2024-07-02T15:14:09.219-05:00"
+                    jcr:lastModified="{Date}2024-07-02T15:22:01.098-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-bootcamp/components/structure/article">
+                    sling:resourceType="aem-bootcamp/components/structure/article"
+                    authorContentFragment="/content/dam/aem-bootcamp/content-fragments/authordetail-cf"
+                    description="&lt;p>Experience the raw beauty and diversity of the Serengeti National Park. This safari adventure takes you deep into the heart of the African savannah, where you&amp;#39;ll witness the Great Migration, spot the Big Five, and explore the vast landscapes teeming with life. Guided by expert trackers, you&amp;#39;ll have close encounters with lions, elephants, and a multitude of other species, making this a dream trip for any wildlife enthusiast.&lt;/p>&#xd;&#xa;&lt;p>In addition to the wildlife encounters, the Serengeti offers breathtaking scenery, from endless plains to the iconic acacia trees silhouetted against the horizon. Each day in the Serengeti brings new surprises and unforgettable experiences, whether it&amp;#39;s a sunrise game drive or an evening spent under the stars in a luxury tented camp.&lt;/p>&#xd;&#xa;"
+                    fileReference="/content/dam/aem-bootcamp/home/adventures/Serengeti.jpg"
+                    textIsRich="true"
+                    title="Safari in the Serengeti: A Wildlife Enthusiast's Paradise">
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"

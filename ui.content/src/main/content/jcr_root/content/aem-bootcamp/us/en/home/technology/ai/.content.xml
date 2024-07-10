@@ -2,11 +2,14 @@
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2024-07-02T15:17:39.599-05:00"
+        cq:lastModified="{Date}2024-07-02T19:48:17.303-05:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aem-bootcamp/settings/wcm/templates/article"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="aem-bootcamp/components/articlepage">
+        jcr:title="AI"
+        sling:resourceType="aem-bootcamp/components/articlepage"
+        articlecategories="[articles:technology]"
+        navTitle="Artificial Intelligence">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="aem-bootcamp/components/container"
@@ -30,10 +33,15 @@
                 <article
                     jcr:created="{Date}2024-07-02T15:14:09.219-05:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2024-07-02T15:14:09.219-05:00"
+                    jcr:lastModified="{Date}2024-07-02T19:48:17.301-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-bootcamp/components/structure/article">
+                    sling:resourceType="aem-bootcamp/components/structure/article"
+                    authorContentFragment="/content/dam/aem-bootcamp/content-fragments/authordetail-cf"
+                    description="&lt;p>&lt;i>Artificial intelligence (AI) continues to revolutionize industries, but its impact on business is profound and far-reaching. From automating routine tasks to enabling predictive analytics, AI empowers businesses to make data-driven decisions with unprecedented accuracy and speed. Companies are increasingly adopting AI-powered solutions to enhance customer service, optimize supply chains, and personalize marketing efforts. As AI capabilities evolve, so do opportunities for innovation and competitive advantage. Embracing AI isn&amp;#39;t just about keeping up—it&amp;#39;s about staying ahead in a rapidly evolving digital landscape.&lt;/i>&lt;/p>&#xd;&#xa;"
+                    fileReference="/content/dam/aem-bootcamp/home/tech/AI.jpg"
+                    textIsRich="true"
+                    title="The Future of Artificial Intelligence in Business">
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
