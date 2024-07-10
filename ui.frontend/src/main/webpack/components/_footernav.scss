@@ -2,6 +2,7 @@
   .cmp-navigation__group {
     display: flex;
     column-gap: 20px;
+    flex-wrap: wrap;
   }
 
   .cmp-navigation__item {

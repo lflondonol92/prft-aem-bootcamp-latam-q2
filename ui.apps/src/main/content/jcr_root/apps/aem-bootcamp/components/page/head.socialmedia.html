@@ -1,0 +1,12 @@
+<meta
+  property="${key}"
+  data-sly-use.socialMedia="com.adobe.cq.wcm.core.components.models.SocialMediaHelper"
+  data-sly-repeat.key="${socialMedia.metadata.keySet}"
+  content="${socialMedia.metadata[key]}"
+/>
+<meta property="og:type" content="${properties.ogtype}" />
+<meta property="og:title" content="${properties.ogtitle}" />
+<meta property="og:url" content="${request.requestURL.toString} " />
+<meta property="og:description" content="${properties.ogdescription}" />
+<meta property="og: image" content="${properties.ogimage}" />
+<meta name="twitter:card" content="${properties.twittercard}" />

@@ -95,7 +95,7 @@
                                                         </inline>
                                                         <dialogFullScreen
                                                             jcr:primaryType="nt:unstructured"
-                                                            toolbar="[edit#cut,edit#copy,edit#paste-default,edit#paste-plaintext,findreplace#find,findreplace#replace,format#bold,format#italic,format#underline,justify#justifyleft,justify#justifyright,links#modifylink,links#unlink,links#anchor,lists#ordered,lists#unordered,lists#indent,lists#outdent,misctools#specialchars,subsuperscript#subscript,subsuperscript#superscript,undo#undo,undo#redo,misctools#sourceedit]">
+                                                            toolbar="[edit#cut,edit#copy,edit#paste-default,edit#paste-plaintext,findreplace#find,findreplace#replace,format#bold,format#italic,format#underline,justify#justifyleft,justify#justifycenter,justify#justifyright,links#modifylink,links#unlink,links#anchor,lists#ordered,lists#unordered,lists#indent,lists#outdent,misctools#specialchars,subsuperscript#subscript,subsuperscript#superscript,undo#undo,undo#redo,misctools#sourceedit]">
                                                         </dialogFullScreen>
                                                     </cui>
                                                 </uiSettings>
