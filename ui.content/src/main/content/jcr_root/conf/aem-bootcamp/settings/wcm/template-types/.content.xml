@@ -3,6 +3,7 @@
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
     <rep:policy/>
-    <page/>
     <base-template/>
+    <page/>
+    <xf/>
 </jcr:root>

@@ -1,4 +1,32 @@
-.cmp-button {}
+
+.cmp-button {
+    display: flex;
+    margin: 0 auto;
+}
 .cmp-button__text {}
 .cmp-button__icon {}
-//.cmp-button__icon--myIcon {}
+
+.cmp-button__primary {
+    .cmp-button {
+        background-color: $color-red;
+        border-radius: 20px;
+        border: $color-red 5px solid;
+
+        &__text {
+            color: $color-white;
+            font-weight: $font-semibold;
+        }
+    }
+}
+
+.cmp-button__secondary {
+    .cmp-button {
+        background-color: $color-white;
+        border-radius: 20px;
+        border: $color-white 5px solid;
+
+        &__text {
+            font-weight: $font-semibold;
+        }
+    }
+}

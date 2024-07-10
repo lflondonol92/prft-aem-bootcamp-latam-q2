@@ -186,6 +186,40 @@
                     type="h2">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_641528232375303>
+                <policy_41347812524401
+                    jcr:lastModified="{Date}2024-07-02T11:42:50.127-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Titles"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    allowedTypes="[h1,h2,h3,h4,h5,h6]"
+                    linkDisabled="false"
+                    type="h1">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Alignment"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-title__center"
+                                    cq:styleId="1719930097254"
+                                    cq:styleLabel="Center"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-title__left"
+                                    cq:styleId="1719930041263"
+                                    cq:styleLabel="Left"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="cmp-title__right"
+                                    cq:styleId="1719930089709"
+                                    cq:styleLabel="Right"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_41347812524401>
             </title>
             <experiencefragment jcr:primaryType="nt:unstructured">
                 <policy_header
@@ -237,22 +271,22 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1716414385646>
                 <policy_33903095635976
-                    jcr:lastModified="{Date}2024-06-13T17:27:20.630-05:00"
+                    jcr:lastModified="{Date}2024-07-02T14:18:34.816-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="General Group"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM Bootcamp Site - Content,group:AEM Bootcamp Site - General,/apps/aem-bootcamp/components/structure/breadcrumb,/apps/aem-bootcamp/components/structure/header]"
+                    components="[group:AEM Bootcamp Site - Content,group:AEM Bootcamp Site - Form,group:AEM Bootcamp Site - General,group:AEM Bootcamp Site - Structure,/libs/core/wcm/components/teaser/v2/teaser]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_33903095635976>
                 <policy_1716481130085
-                    jcr:lastModified="{Date}2024-05-23T15:16:35.566-05:00"
+                    jcr:lastModified="{Date}2024-07-02T08:33:01.142-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Teaser and Carousel"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[/apps/aem-bootcamp/components/carousel,/apps/aem-bootcamp/components/teaser]"
+                    components="[/apps/aem-bootcamp/components/carousel,/apps/aem-bootcamp/components/teaser,/libs/core/wcm/components/teaser/v2/teaser]"
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1716481130085>
@@ -355,7 +389,7 @@
                     </cq:authoring>
                 </policy_1575040440977>
                 <policy_1719435134410
-                    jcr:lastModified="{Date}2024-06-26T15:56:20.273-05:00"
+                    jcr:lastModified="{Date}2024-07-02T14:13:29.951-05:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Background containers"
@@ -379,6 +413,22 @@
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
+                        <item1
+                            cq:styleGroupLabel="Type"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-container__brand"
+                                    cq:styleId="1719933272684"
+                                    cq:styleLabel="Brands"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-container__articles"
+                                    cq:styleId="1719947605006"
+                                    cq:styleLabel="Articles"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
                     </cq:styleGroups>
                 </policy_1719435134410>
             </container>
@@ -539,7 +589,7 @@
                 </text>
                 <separator jcr:primaryType="nt:unstructured">
                     <policy_1717593874725
-                        jcr:lastModified="{Date}2024-06-07T15:49:39.872-05:00"
+                        jcr:lastModified="{Date}2024-07-02T17:37:25.550-05:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Footer Separator"
@@ -630,6 +680,61 @@
                     </policy_1717593874725>
                 </separator>
             </general>
+            <button jcr:primaryType="nt:unstructured">
+                <policy_1719931098501
+                    jcr:lastModified="{Date}2024-07-02T09:39:14.237-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Buttons"
+                    sling:resourceType="wcm/core/components/policy/policy">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Type"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-button__primary"
+                                    cq:styleId="1719931111570"
+                                    cq:styleLabel="Primary"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="cmp-button__secondary"
+                                    cq:styleId="1719931134054"
+                                    cq:styleLabel="Secondary"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1719931098501>
+            </button>
+            <carousel jcr:primaryType="nt:unstructured">
+                <policy_1719939485342
+                    jcr:lastModified="{Date}2024-07-02T11:58:48.349-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Carousels"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    autopauseDisabled="false"
+                    autoplay="false"
+                    controlsPrepended="false"
+                    delay="5000">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Type"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp-carousel__testimonial"
+                                    cq:styleId="1719939501635"
+                                    cq:styleLabel="Testimonial"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1719939485342>
+            </carousel>
         </components>
     </aem-bootcamp>
     <wcm jcr:primaryType="nt:unstructured">

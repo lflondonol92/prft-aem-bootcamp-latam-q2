@@ -1,6 +1,13 @@
 .cmp-teaser {}
-.cmp-teaser__image {}
-.cmp-teaser__content {}
+.cmp-teaser__image {
+    .cmp-image__image {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+.cmp-teaser__content {
+    text-align: center;
+}
 .cmp-teaser__pretitle {}
 .cmp-teaser__title {}
 .cmp-teaser__title-link {}

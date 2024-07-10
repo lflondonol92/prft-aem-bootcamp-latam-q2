@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-07-03T06:09:53.943-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aem-bootcamp/settings/wcm/templates/article"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Tokyo"
+        sling:resourceType="aem-bootcamp/components/articlepage"
+        articlecategories="[articles:adventures/urban]"
+        navTitle="Tokyo City Adventure"
+        ogdescription="Tokyo travel"
+        ogimage="/content/dam/aem-bootcamp/home/adventures/Tokyo.jpg"
+        ogtitle="Tokyo"
+        ogtype="article"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any"
+        twittercard="helps">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aem-bootcamp/components/container"
+            layout="responsiveGrid">
+            <container_1593565191
+                jcr:created="{Date}2024-05-22T16:42:11.004-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-05-22T17:05:16.103-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-bootcamp/components/container"
+                layout="responsiveGrid"/>
+            <container
+                jcr:created="{Date}2024-05-22T16:42:06.671-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-05-22T17:05:18.074-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-bootcamp/components/container"
+                layout="responsiveGrid">
+                <article
+                    jcr:created="{Date}2024-07-02T15:14:09.219-05:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2024-07-02T15:21:46.622-05:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-bootcamp/components/structure/article"
+                    authorContentFragment="/content/dam/aem-bootcamp/content-fragments/authordetail-cf"
+                    description="&lt;p>Tokyo, the bustling capital of Japan, offers an unparalleled urban adventure for those seeking to explore a city like no other. Dive into the vibrant culture, cutting-edge technology, and rich history that Tokyo has to offer. Start your journey in Shibuya, crossing the famous scramble crossing and soaking in the neon lights. Venture into the historic Asakusa district to visit the Senso-ji Temple, and experience traditional Japan amidst the modern skyline. Don&amp;#39;t miss out on the culinary delights of Tsukiji Market, where fresh sushi and local delicacies await.&lt;/p>&#xd;&#xa;&lt;p>Explore these iconic Tokyo spots:&lt;/p>&#xd;&#xa;&lt;ul>&lt;li>&lt;b>Shibuya Crossing&lt;/b>: Experience the rush of crossing one of the busiest intersections in the world.&lt;/li>&lt;li>&lt;b>Senso-ji Temple, Asakusa&lt;/b>: Immerse yourself in the serene atmosphere of Tokyo&amp;#39;s oldest temple.&lt;/li>&lt;li>&lt;b>Akihabara&lt;/b>: Discover the electric town known for its anime culture and electronics shops.&lt;/li>&lt;li>&lt;b>Tsukiji Market&lt;/b>: Indulge in fresh sushi and seafood delicacies at the world&amp;#39;s largest fish market.&lt;/li>&lt;/ul>&#xd;&#xa;&lt;p>For a unique twist, explore the hidden alleys and underground scenes of Akihabara, the hub of anime and electronics. Tokyo is a city that never sleeps, offering endless excitement and discoveries at every corner. Whether you&amp;#39;re fascinated by the futuristic architecture, historic temples, or the bustling street markets, Tokyo promises an adventure that will leave you in awe.&lt;/p>&#xd;&#xa;"
+                    fileReference="/content/dam/aem-bootcamp/home/adventures/Tokyo.jpg"
+                    textIsRich="true"
+                    title="Urban Exploration in Tokyo: The Ultimate City Adventure">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="10"/>
+                    </cq:responsive>
+                </article>
+            </container>
+            <experiencefragment
+                jcr:created="{Date}2024-05-22T16:41:54.189-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-05-22T17:05:31.492-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-bootcamp/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/aem-bootcamp/us/en/site/header/master"/>
+            <experiencefragment_405537399
+                jcr:created="{Date}2024-05-22T16:42:14.288-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2024-05-22T17:05:44.280-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aem-bootcamp/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/aem-bootcamp/us/en/site/footer/master"/>
+        </root>
+    </jcr:content>
+</jcr:root>
