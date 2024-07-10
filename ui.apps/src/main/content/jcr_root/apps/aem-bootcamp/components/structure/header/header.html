@@ -30,7 +30,7 @@
         <ul class="cmp-header__navigation-nav-group">
           <li
             data-sly-repeat.navItems="${header.headerNavigationItemsList}"
-            class="cmp-header__navigation-nav-item ${navItems.path == currentPage.path ? 'cmp-header__navigation-nav-item--active' : ''}"
+            class="cmp-header__navigation-nav-item ${navItems.path == currentPage.path ? 'cmp-header__navigation-nav-item__active' : ''}"
           >
             <a
               href="${navItems.path @extension='html'}"
