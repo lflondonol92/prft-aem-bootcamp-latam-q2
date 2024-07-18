@@ -13,15 +13,19 @@ $font-bold: 700;
 $color-grey:            black;
 $color-black:           black;
 $color-white:           white;
+$color-almost-white:    #FFFFFF;
+$color-grey:            grey;
 $color-yellow:          yellow;
 $color-red:             red;
+$color-dark-red:        rgb(180, 0, 0);
 $color-blue:            blue;
 
 // Normal mode
 $color-foreground:      $color-black;
-$color-background:      #FFFFFF;
+$color-background:      $color-almost-white;
 $color-link:            $color-foreground;
 $color-primary:         $color-red;
+$color-dark-primary:    $color-dark-red;
 
 // Dark mode
 $color-foreground-dark: $color-foreground;
