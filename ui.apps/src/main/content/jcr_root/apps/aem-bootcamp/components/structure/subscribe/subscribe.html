@@ -1,14 +1,10 @@
 <sly
   data-sly-use.subscribe="com.aembootcamp.core.models.SubscribeModel"
 />
-<sly
-  data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html"
->
-  <sly data-sly-call="${clientlib.all @ categories='aem-bootcamp.subscribe'}" />
-</sly>
 
 <div class="cmp-subscribe">
-  <form method="post" action="" id="subscribe-form" data-redirect="${subscribe.redirect @ extension='html'}" >
+  <form method="post" action="/bin/subscribe" id="subscribe-form" data-redirect="${subscribe.redirect @ extension='html'}" >
+  <input type="hidden" name="redirect" value="${subscribe.redirect @ extension='html'}" />
     <div class="cmp-subscribe__input-group">
       <label for="first-name">${subscribe.firstNameLabel}:</label>
       <input id="first-name" type="text" name="First Name" required />
